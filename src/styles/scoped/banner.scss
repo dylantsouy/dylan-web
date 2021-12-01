@@ -1,0 +1,260 @@
+.banner {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  background-color: #f5f2e7;
+  justify-content: space-between;
+  .banner-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+    .name {
+      font-size: 60px;
+      font-weight: 600;
+    }
+    .position {
+      font-size: 20px;
+    }
+    .intro {
+      font-size: 14px;
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+    .btn-area {
+      display: flex;
+      margin-top: 30px;
+      .click-btn {
+        font-size: 16px !important;
+        width: 100px !important;
+      }
+      .primaryBtn {
+        margin-right: 40px;
+      }
+    }
+  }
+  .banner-right {
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    padding-top: 100px;
+    animation: 1.5s hidden-to-show;
+    .banner-img {
+      position: relative;
+      padding-left: 100px;
+      display: flex;
+      width: 70%;
+      align-items: flex-end;
+    }
+    .mainBall {
+      z-index: 0;
+      left: 0px;
+      top: 150px;
+      position: absolute;
+      height: 380px;
+      animation: up-and-down 4s alternate-reverse infinite;
+    }
+    .selfPhoto {
+      z-index: 1;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .go-to {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    width: 35px;
+    margin: auto;
+    z-index: 1;
+    text-align: center;
+    cursor: pointer;
+    div {
+      width: 35px;
+      height: 35px;
+      position: relative;
+      background-color: $primary_bg;
+      color: #fff;
+      display: inline-block;
+      border-radius: 50%;
+      animation: down 1s linear infinite;
+      span {
+        border-top: 1px solid #fff;
+        border-right: 1px solid #fff;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top: -6px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        transform: rotate(135deg);
+      }
+    }
+  }
+}
+@media (max-width: 1700px) {
+  .banner {
+    .banner-right {
+      .banner-img {
+        width: 60%;
+      }
+    }
+  }
+}
+@media (max-width: 1600px) {
+  .banner {
+    .banner-right {
+      .banner-img {
+        width: 65%;
+      }
+    }
+  }
+}
+@media (max-width: 1500px) {
+  .banner {
+    .banner-right {
+      .banner-img {
+        width: 60%;
+      }
+    }
+  }
+}
+@media (max-width: 1400px) {
+  .banner {
+    .banner-right {
+      .banner-img {
+        width: 75%;
+      }
+    }
+  }
+}
+@media (max-width: 1300px) {
+  .banner {
+    .banner-right {
+      .banner-img {
+        width: 78%;
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .banner {
+    .banner-left {
+      padding-top: 0;
+      padding-left: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .btn-area {
+        .click-btn {
+          font-size: 14px !important;
+          width: 90px !important;
+        }
+      }
+    }
+    .banner-right {
+      align-items: center;
+      .banner-img {
+        width: 350px;
+      }
+      .mainBall {
+        height: 280px;
+      }
+    }
+  }
+}
+@media (max-width: 1100px) {
+  .banner {
+    .banner-right {
+      .banner-img {
+        width: 300px;
+      }
+    }
+  }
+}
+@media (max-width: 865px) {
+  .banner {
+    justify-content: flex-end;
+    flex-direction: column-reverse;
+    .banner-left {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-self: center;
+      margin: 50px 0;
+      width: 70%;
+      .hello {
+        font-size: 14px;
+      }
+      .name {
+        font-size: 46px;
+      }
+      .position {
+        font-size: 16px;
+      }
+      .intro {
+        font-size: 12px;
+      }
+      .btn-area {
+        .click-btn {
+          font-size: 14px !important;
+          width: 90px !important;
+        }
+      }
+    }
+    .banner-right {
+      padding-top: 100px;
+      width: 100%;
+      justify-content: center;
+      .mainBall {
+        top: 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .banner {
+    .banner-left {
+      width: 85%;
+      .hello {
+        font-size: 13px;
+      }
+      .name {
+        margin: 5px 0;
+        font-size: 36px;
+      }
+      .position {
+        font-size: 14px;
+      }
+      .intro {
+        font-size: 12px;
+      }
+      .btn-area {
+        .click-btn {
+          font-size: 12px !important;
+          width: 80px !important;
+          padding: 10px 5px;
+        }
+      }
+    }
+    .banner-right {
+      .banner-img {
+        width: 200px;
+        padding-left: 0;
+      }
+      .mainBall {
+        height: 220px;
+        left: -20px;
+        top: 0;
+      }
+    }
+  }
+}

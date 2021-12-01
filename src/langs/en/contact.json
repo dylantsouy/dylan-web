@@ -1,0 +1,29 @@
+{
+  "contact": "Contact Me",
+  "subtitle": "If you require any further information, feel free to contact me.",
+  "address": "My Address",
+  "addressValue": "No. 134, Xianbei St, North District, Tainan City, 704",
+  "phone": "My Phone",
+  "phoneValue1": "Mobile : 0986162360",
+  "email": "My Email",
+  "input": {
+    "title": "Write to me",
+    "name": "Your Name",
+    "noName": "Name is empty, please input it",
+    "phone": "Your Phone",
+    "phoneErrorFormat": "The format of phone isn't correct",
+    "email": "Your Email",
+    "emailErrorFormat": "The format of email address isn't correct",
+    "noEmail": "Email address is empty, please input it",
+    "content": "Your Content",
+    "noContent": "Content is empty, please input it",
+    "placeholder": "Please typing...",
+    "required": "Required",
+    "sendMail": "Send Mail",
+    "sending": "Sending...",
+    "conformSend": "Confirm to send mail ?",
+    "success": "Successfully sent, thank you !",
+    "error": "Failed to sent mail, please contact me by phone , thank you !",
+    "tooManyTry": "The time before you sent from last time is too close, please try it later thank you !"
+  }
+}

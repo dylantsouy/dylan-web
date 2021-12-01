@@ -1,0 +1,1 @@
+export const releaseVersion = 'v0.0.1';

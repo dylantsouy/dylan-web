@@ -1,0 +1,30 @@
+
+<svg width="93px" height="70px" viewBox="0 0 93 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-Page" transform="translate(-117.000000, -50.000000)">
+            <g id="Group-11" transform="translate(117.000000, 50.000000)">
+                <g id="Group-15" transform="translate(0.000000, 5.000000)">
+                    <path d="M45.5,59.5900571 C62.3446849,59.5900571 74.9597839,56.9091719 74.9597839,40.0644871 C74.9597839,35.8319953 58.4058142,29.2506411 56.453139,24.4349792 C54.5004638,19.6193173 55.083857,14.5165319 54.8665612,10.2751394 C54.7720314,8.4300145 55.0766002,8.15819408 54.8665612,7.16823895 C53.9949344,3.06009067 51.4099715,0 45.5,0 C28.6553151,0 14.5872972,13.6670003 15,30.5 C15.0439933,32.2943626 15.1012351,33.5513579 15.1981643,34.5758484 C15.2467455,35.0893262 15.2734322,35.5276552 15.3773764,35.9795679 C15.8784724,38.1581555 17.0150032,39.6073858 19.5343444,42.7214861 C25.6237862,50.2485063 36.0815992,59.5900571 45.5,59.5900571 Z" id="Oval" fill="#EED9C3"></path>
+                    <g id="Group-10" transform="translate(0.000000, 3.000000)">
+                        <line x1="61.5" y1="33.5" x2="83.5" y2="33.5" id="Line" stroke="#2B1A44" stroke-width="2" stroke-linecap="square"></line>
+                        <rect id="Rectangle" x="0" y="5" width="73" height="22"></rect>
+                        <text id="A-N-‘s" font-family="BalooBhai-Regular, Baloo Bhai" font-size="20" font-weight="600" fill="#2B1A44">
+                            <tspan x="11" y="39">A N ‘s</tspan>
+                        </text>
+                        <text id="D-Y-L" font-family="BalooBhai-Regular, Baloo Bhai" font-size="20" font-weight="600" fill="#2B1A44">
+                            <tspan x="27" y="21">D Y L</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-8" transform="translate(7.000000, 19.000000)">
+                        <text id="W-e-b-s-i-t-e" font-family="BalooBhai-Regular, Baloo Bhai" font-size="6" font-weight="600" fill="#2B1A44">
+                            <tspan x="40" y="31">W e b s i t e</tspan>
+                        </text>
+                        <line x1="0.5" y1="0.5" x2="16.5" y2="0.5" id="Line" stroke="#2B1A44" stroke-width="2" stroke-linecap="square"></line>
+                        <rect id="Rectangle" x="1" y="11" width="80" height="24"></rect>
+                    </g>
+                </g>
+                <rect id="Rectangle" x="0" y="0" width="93" height="70"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

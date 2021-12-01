@@ -1,0 +1,102 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+  background-color: #f5f2e7;
+  .navbar-left {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    img {
+      width: 55px;
+      height: 43px;
+    }
+  }
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    .navbar-items {
+      display: flex;
+      align-items: center;
+      .navbar-item {
+        text-decoration: none;
+        color: #333;
+        margin: 0 20px;
+        font-weight: 600;
+        cursor: pointer;
+        &.active {
+          color: $primary_bg;
+          position: relative;
+          &::after{
+            position: absolute;
+            content: '';
+            height: 2px;
+            width: 60%;
+            background-color: $primary_bg;
+            bottom: -2px;
+            right: 20%;
+          }
+        }
+      }
+    }
+    .menuList {
+      top: 0 !important;
+      overflow: initial;
+    }
+    .navbar-rwd-button {
+      display: none;
+    }
+    .langSelect {
+      position: relative;
+      width: 40px !important;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      .MuiOutlinedInput-root {
+        opacity: 0;
+      }
+      svg {
+        color: #555 !important;
+      }
+    }
+  }
+}
+.MuiMenuItem-root{
+  font-size: 14px !important;
+}
+.MuiDrawer-paper {
+  .MuiBox-root {
+    background-color: $dark_bg;
+    color: #fff;
+    img {
+      cursor: pointer;
+      width: 25px;
+      height: 25px;
+      margin: 15px 0 0 18px;
+    }
+    svg {
+      color: #fff;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .navbar {
+   padding: 0 20px;
+    .navbar-right {
+      .navbar-items {
+        display: none;
+      }
+      .navbar-rwd-button {
+        display: flex;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}
