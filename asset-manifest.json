@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/dylan-web/static/css/main.aeee9953.chunk.css",
-    "main.js": "/dylan-web/static/js/main.1705ca40.chunk.js",
-    "main.js.map": "/dylan-web/static/js/main.1705ca40.chunk.js.map",
+    "main.js": "/dylan-web/static/js/main.cec052ff.chunk.js",
+    "main.js.map": "/dylan-web/static/js/main.cec052ff.chunk.js.map",
     "runtime-main.js": "/dylan-web/static/js/runtime-main.f4d617b6.js",
     "runtime-main.js.map": "/dylan-web/static/js/runtime-main.f4d617b6.js.map",
     "static/css/2.50a816e4.chunk.css": "/dylan-web/static/css/2.50a816e4.chunk.css",
@@ -14,30 +14,27 @@
     "static/js/2.8cd1e74d.chunk.js.LICENSE.txt": "/dylan-web/static/js/2.8cd1e74d.chunk.js.LICENSE.txt",
     "static/media/DylanEnglish.d9b467f1.gif": "/dylan-web/static/media/DylanEnglish.d9b467f1.gif",
     "static/media/FuYen, Tsou - CV (Nov 2021).3a095771.pdf": "/dylan-web/static/media/FuYen, Tsou - CV (Nov 2021).3a095771.pdf",
-    "static/media/aboutPic.47b7866c.png": "/dylan-web/static/media/aboutPic.47b7866c.png",
+    "static/media/aboutPic.f4ac3e6d.png": "/dylan-web/static/media/aboutPic.f4ac3e6d.png",
     "static/media/brick.2508e2eb.gif": "/dylan-web/static/media/brick.2508e2eb.gif",
     "static/media/gif.5d0985bf.gif": "/dylan-web/static/media/gif.5d0985bf.gif",
-    "static/media/htmlset.aac2c4a9.png": "/dylan-web/static/media/htmlset.aac2c4a9.png",
+    "static/media/htmlset.d220b82b.png": "/dylan-web/static/media/htmlset.d220b82b.png",
     "static/media/ionic.779223c1.gif": "/dylan-web/static/media/ionic.779223c1.gif",
     "static/media/mainBall.788f9591.svg": "/dylan-web/static/media/mainBall.788f9591.svg",
-    "static/media/map_lg.5faba7f5.png": "/dylan-web/static/media/map_lg.5faba7f5.png",
-    "static/media/map_md.e1a76b4d.png": "/dylan-web/static/media/map_md.e1a76b4d.png",
-    "static/media/map_sm.eedaa53a.png": "/dylan-web/static/media/map_sm.eedaa53a.png",
-    "static/media/map_xl.aa1657d7.png": "/dylan-web/static/media/map_xl.aa1657d7.png",
-    "static/media/map_xs.fdf329d7.png": "/dylan-web/static/media/map_xs.fdf329d7.png",
-    "static/media/mongodb.b471ef6b.png": "/dylan-web/static/media/mongodb.b471ef6b.png",
+    "static/media/map_lg.40661741.png": "/dylan-web/static/media/map_lg.40661741.png",
+    "static/media/map_md.faded13e.png": "/dylan-web/static/media/map_md.faded13e.png",
+    "static/media/map_sm.26ae017c.png": "/dylan-web/static/media/map_sm.26ae017c.png",
+    "static/media/map_xl.5e54b07b.png": "/dylan-web/static/media/map_xl.5e54b07b.png",
+    "static/media/map_xs.17f337a3.png": "/dylan-web/static/media/map_xs.17f337a3.png",
+    "static/media/mongodb.028a9cac.png": "/dylan-web/static/media/mongodb.028a9cac.png",
     "static/media/movie.e8762575.gif": "/dylan-web/static/media/movie.e8762575.gif",
-    "static/media/mysql.f2e27e2a.png": "/dylan-web/static/media/mysql.f2e27e2a.png",
-    "static/media/react.4526cfee.png": "/dylan-web/static/media/react.4526cfee.png",
-    "static/media/sass.cc892e8e.png": "/dylan-web/static/media/sass.cc892e8e.png",
-    "static/media/self.ec1d6130.svg": "/dylan-web/static/media/self.ec1d6130.svg",
-    "static/media/typescript.eeb913e1.png": "/dylan-web/static/media/typescript.eeb913e1.png"
+    "static/media/react.bc2e3a9e.png": "/dylan-web/static/media/react.bc2e3a9e.png",
+    "static/media/self.ec1d6130.svg": "/dylan-web/static/media/self.ec1d6130.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.f4d617b6.js",
     "static/css/2.50a816e4.chunk.css",
     "static/js/2.8cd1e74d.chunk.js",
     "static/css/main.aeee9953.chunk.css",
-    "static/js/main.1705ca40.chunk.js"
+    "static/js/main.cec052ff.chunk.js"
   ]
 }
