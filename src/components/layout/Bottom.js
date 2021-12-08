@@ -30,22 +30,22 @@ const Bottom = () => {
             </a>
           </Tooltip>
           <Tooltip title="Facebook" placement="top">
-          <a
-            href="https://www.facebook.com/fu.y.zou"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FacebookIcon />
-          </a>
+            <a
+              href="https://www.facebook.com/fu.y.zou"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FacebookIcon />
+            </a>
           </Tooltip>
           <Tooltip title="Email to me" placement="top">
-          <a
-            href="mailto:bear817005@gmail.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <EmailIcon />
-          </a>
+            <a
+              href="mailto:bear817005@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <EmailIcon />
+            </a>
           </Tooltip>
         </div>
         <div className="bottom-copyright-rwd">{t("copyright")}</div>
