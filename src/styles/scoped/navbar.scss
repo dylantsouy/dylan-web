@@ -33,9 +33,9 @@
         &.active {
           color: $primary_bg;
           position: relative;
-          &::after{
+          &::after {
             position: absolute;
-            content: '';
+            content: "";
             height: 2px;
             width: 60%;
             background-color: $primary_bg;
@@ -62,13 +62,13 @@
       .MuiOutlinedInput-root {
         opacity: 0;
       }
-      .flag-icon{
+      .flag-icon {
         width: 22.5px;
       }
     }
   }
 }
-.MuiMenuItem-root{
+.MuiMenuItem-root {
   display: flex !important;
   justify-content: center !important;
   align-items: center;
@@ -80,8 +80,8 @@
     color: #fff;
     img {
       cursor: pointer;
-      width: 25px;
-      height: 25px;
+      width: 38px;
+      height: 28px;
       margin: 15px 0 0 18px;
     }
     svg {
@@ -91,9 +91,15 @@
 }
 @media (max-width: 767px) {
   .navbar {
-   padding: 0 0 0 20px;
+    padding: 0 0 0 20px;
+    .navbar-left {
+      img {
+        width: 45px;
+        height: 33px;
+      }
+    }
     .navbar-right {
-      .langSelect{
+      .langSelect {
         padding-right: 20px;
       }
       .navbar-items {

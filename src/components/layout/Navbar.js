@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import logo from "../../assets/images/logo.png";
 import logoW from "../../assets/images/logo_w.png";
-import { useHistory } from "react-router-dom";
 import { useTranslation } from "../../langs/useTranslation";
 import LangSelect from "../common/LangSelect";
 import DehazeIcon from "@mui/icons-material/Dehaze";
@@ -21,7 +20,6 @@ import { scrollTo } from "../../helpers/router";
 const Navbar = () => {
   const { t } = useTranslation("common");
   const [showDrawer, setShowDrawer] = useState(false);
-  const history = useHistory();
 
   const clickHandler = (title) => {
     scrollTo(0, 600, `.${title}`);
@@ -33,7 +31,7 @@ const Navbar = () => {
       onClick={() => setShowDrawer(false)}
       onKeyDown={() => setShowDrawer(false)}
     >
-      <img src={logoW} alt="logo" onClick={() => history.push("/main")} />
+      <img src={logoW} alt="logo" className="navbar-rwd-icon"/>
       <List>
         {navItems.map((e) => (
           <ListItem button key={e.title} onClick={() => clickHandler(e.title)}>
