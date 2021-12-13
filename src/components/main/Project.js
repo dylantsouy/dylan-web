@@ -35,7 +35,6 @@ const Project = (props) => {
       date: "Aug, 2020",
       link: "https://dymoviesearch.herokuapp.com/",
     },
-    { src: project4, text: t("project4"), date: "Mar, 2021", link: "" },
     {
       src: project5,
       text: t("project5"),

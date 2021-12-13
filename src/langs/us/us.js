@@ -5,7 +5,7 @@ import skill from "./skill.json";
 import project from "./project.json";
 import contact from "./contact.json";
 
-export const zh_tw = {
+export const us = {
   common,
   banner,
   about,

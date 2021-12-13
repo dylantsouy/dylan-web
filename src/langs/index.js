@@ -1,9 +1,9 @@
-import { en } from "./en/en";
-import { zh_tw } from "./zh_tw/zh_tw";
+import { us } from "./us/us";
+import { tw } from "./tw/tw";
 
-export const dictionaryList = { en, zh_tw };
+export const dictionaryList = { us, tw };
 
 export const languageOptions = {
-  en: <span class="flag-icon flag-icon-us"></span>,
-  zh_tw: <span class="flag-icon flag-icon-tw"></span>,
+  us: <span class="flag-icon flag-icon-us"></span>,
+  tw: <span class="flag-icon flag-icon-tw"></span>,
 };

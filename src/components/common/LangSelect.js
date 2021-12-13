@@ -1,8 +1,7 @@
-import React, { useState,useContext } from 'react';
-import MenuItem from '@mui/material/MenuItem';
-import Select from '@mui/material/Select';
-import { IconButton } from '@mui/material';
-import TranslateIcon from '@mui/icons-material/Translate';
+import React, { useState, useContext } from "react";
+import MenuItem from "@mui/material/MenuItem";
+import Select from "@mui/material/Select";
+import { IconButton } from "@mui/material";
 import { LanguageContext } from "../../langs/LanguageContext";
 import { languageOptions } from "../../langs/index";
 
@@ -29,7 +28,7 @@ const LangSelect = () => {
       onClose={handleLangMenuClose}
       value={userLanguage}
       onChange={handleLangChange}
-      MenuProps={{ id: "lang-select" }}
+      MenuProps={{ disableScrollLock: true }}
     >
       {Object.entries(languageOptions).map(([id, name]) => (
         <MenuItem key={id} value={id} name={id}>
@@ -46,7 +45,9 @@ const LangSelect = () => {
         aria-label="lang"
         onClick={handleLangMenuOpen}
       >
-        <TranslateIcon />
+        <span
+          className={`flag-icon flag-icon-${userLanguage && userLanguage}`}
+        />
       </IconButton>
       {renderLangMenu}
     </div>
