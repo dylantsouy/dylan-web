@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/dylan-web/static/css/main.aeee9953.chunk.css",
-    "main.js": "/dylan-web/static/js/main.cec052ff.chunk.js",
-    "main.js.map": "/dylan-web/static/js/main.cec052ff.chunk.js.map",
+    "main.css": "/dylan-web/static/css/main.b56a7c9c.chunk.css",
+    "main.js": "/dylan-web/static/js/main.6466fbcc.chunk.js",
+    "main.js.map": "/dylan-web/static/js/main.6466fbcc.chunk.js.map",
     "runtime-main.js": "/dylan-web/static/js/runtime-main.f4d617b6.js",
     "runtime-main.js.map": "/dylan-web/static/js/runtime-main.f4d617b6.js.map",
-    "static/css/2.50a816e4.chunk.css": "/dylan-web/static/css/2.50a816e4.chunk.css",
-    "static/js/2.8cd1e74d.chunk.js": "/dylan-web/static/js/2.8cd1e74d.chunk.js",
-    "static/js/2.8cd1e74d.chunk.js.map": "/dylan-web/static/js/2.8cd1e74d.chunk.js.map",
+    "static/css/2.3fb3d1db.chunk.css": "/dylan-web/static/css/2.3fb3d1db.chunk.css",
+    "static/js/2.8a5120d7.chunk.js": "/dylan-web/static/js/2.8a5120d7.chunk.js",
+    "static/js/2.8a5120d7.chunk.js.map": "/dylan-web/static/js/2.8a5120d7.chunk.js.map",
     "index.html": "/dylan-web/index.html",
-    "static/css/2.50a816e4.chunk.css.map": "/dylan-web/static/css/2.50a816e4.chunk.css.map",
-    "static/css/main.aeee9953.chunk.css.map": "/dylan-web/static/css/main.aeee9953.chunk.css.map",
-    "static/js/2.8cd1e74d.chunk.js.LICENSE.txt": "/dylan-web/static/js/2.8cd1e74d.chunk.js.LICENSE.txt",
+    "static/css/2.3fb3d1db.chunk.css.map": "/dylan-web/static/css/2.3fb3d1db.chunk.css.map",
+    "static/css/main.b56a7c9c.chunk.css.map": "/dylan-web/static/css/main.b56a7c9c.chunk.css.map",
+    "static/js/2.8a5120d7.chunk.js.LICENSE.txt": "/dylan-web/static/js/2.8a5120d7.chunk.js.LICENSE.txt",
     "static/media/DylanEnglish.d9b467f1.gif": "/dylan-web/static/media/DylanEnglish.d9b467f1.gif",
     "static/media/FuYen, Tsou - CV (Nov 2021).3a095771.pdf": "/dylan-web/static/media/FuYen, Tsou - CV (Nov 2021).3a095771.pdf",
     "static/media/aboutPic.f4ac3e6d.png": "/dylan-web/static/media/aboutPic.f4ac3e6d.png",
+    "static/media/flag-icons.min.css": "/dylan-web/static/media/zw.cd37458b.svg",
     "static/media/brick.2508e2eb.gif": "/dylan-web/static/media/brick.2508e2eb.gif",
     "static/media/gif.5d0985bf.gif": "/dylan-web/static/media/gif.5d0985bf.gif",
     "static/media/htmlset.d220b82b.png": "/dylan-web/static/media/htmlset.d220b82b.png",
@@ -32,9 +33,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.f4d617b6.js",
-    "static/css/2.50a816e4.chunk.css",
-    "static/js/2.8cd1e74d.chunk.js",
-    "static/css/main.aeee9953.chunk.css",
-    "static/js/main.cec052ff.chunk.js"
+    "static/css/2.3fb3d1db.chunk.css",
+    "static/js/2.8a5120d7.chunk.js",
+    "static/css/main.b56a7c9c.chunk.css",
+    "static/js/main.6466fbcc.chunk.js"
   ]
 }
