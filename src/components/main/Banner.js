@@ -23,6 +23,7 @@ const Banner = (props) => {
         <div className="btn-area">
           <ClickBtn
             width="180px"
+            height="30px"
             type="primaryBtn"
             text={t("myWork")}
             fontSize="20px"
@@ -30,6 +31,7 @@ const Banner = (props) => {
           />
           <ClickBtn
             width="180px"
+            height="30px"
             type="secBtn"
             text={t("contact")}
             fontSize="20px"
