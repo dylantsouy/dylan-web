@@ -86,7 +86,7 @@ html {
 }
 
 .section {
-  padding: 50px $padding_lg 60px;
+  padding: 50px $padding_lg 70px;
 }
 .swiper-button-next,
 .swiper-button-prev {
@@ -115,13 +115,13 @@ html {
 }
 @media (max-width: 1500px) {
   .section {
-    padding: 30px $padding_sm 50px $padding_md;
+    padding: 50px $padding_sm 70px $padding_md;
   }
 }
 
 @media (max-width: 1200px) {
   .section {
-    padding: 30px $padding_md 50px;
+    padding: 50px $padding_md 70px;
   }
   .title {
     font-size: 30px;
@@ -133,12 +133,12 @@ html {
 
 @media (max-width: 1100px) {
   .section {
-    padding: 30px $padding_sm 50px $padding_md;
+    padding: 50px $padding_sm 70px $padding_md;
   }
 }
 @media (max-width: 1000px) {
   .section {
-    padding: 30px $padding_md 50px;
+    padding: 50px $padding_md 70px;
   }
   .title {
     font-size: 26px;
@@ -147,7 +147,7 @@ html {
 
 @media (max-width: 880px) {
   .section {
-    padding: 30px $padding_md 50px;
+    padding: 50px $padding_md 70px;
   }
   .title {
     font-size: 20px;
@@ -169,7 +169,7 @@ html {
 
 @media (max-width: 550px) {
   .section {
-    padding: 30px $padding_xs 50px;
+    padding: 50px $padding_xs 70px;
   }
   .swiper-button-next,
   .swiper-button-prev {
@@ -188,7 +188,7 @@ html {
 
 @media (max-width: 390px) {
   .section {
-    padding: 30px $padding_xs 50px;
+    padding: 50px $padding_xs 70px;
   }
   .swiper-button-next,
   .swiper-button-prev {
