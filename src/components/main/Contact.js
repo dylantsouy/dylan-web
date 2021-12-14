@@ -37,7 +37,7 @@ const Contact = (props) => {
   const [content, setContent] = useState("");
   const [check, setCheck] = useState(false);
   const [notyOpen, setNotyOpen] = useState(false);
-  const [btnDisabled, setBtnDisabled] = useState(true);
+  const [btnDisabled, setBtnDisabled] = useState(false);
   const [noty, setNoty] = useState({
     type: "success",
     text: "",
