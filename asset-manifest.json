@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/dylan-web/static/css/main.9b753c3a.chunk.css",
-    "main.js": "/dylan-web/static/js/main.cb6085a9.chunk.js",
-    "main.js.map": "/dylan-web/static/js/main.cb6085a9.chunk.js.map",
+    "main.js": "/dylan-web/static/js/main.e5ea0666.chunk.js",
+    "main.js.map": "/dylan-web/static/js/main.e5ea0666.chunk.js.map",
     "runtime-main.js": "/dylan-web/static/js/runtime-main.f4d617b6.js",
     "runtime-main.js.map": "/dylan-web/static/js/runtime-main.f4d617b6.js.map",
     "static/css/2.3fb3d1db.chunk.css": "/dylan-web/static/css/2.3fb3d1db.chunk.css",
@@ -19,22 +19,25 @@
     "static/media/brick.2508e2eb.gif": "/dylan-web/static/media/brick.2508e2eb.gif",
     "static/media/gif.5d0985bf.gif": "/dylan-web/static/media/gif.5d0985bf.gif",
     "static/media/htmlset.d220b82b.png": "/dylan-web/static/media/htmlset.d220b82b.png",
+    "static/media/jquery.619df51a.png": "/dylan-web/static/media/jquery.619df51a.png",
     "static/media/mainBall.788f9591.svg": "/dylan-web/static/media/mainBall.788f9591.svg",
     "static/media/map_lg.40661741.png": "/dylan-web/static/media/map_lg.40661741.png",
     "static/media/map_md.faded13e.png": "/dylan-web/static/media/map_md.faded13e.png",
     "static/media/map_sm.26ae017c.png": "/dylan-web/static/media/map_sm.26ae017c.png",
     "static/media/map_xl.5e54b07b.png": "/dylan-web/static/media/map_xl.5e54b07b.png",
     "static/media/map_xs.17f337a3.png": "/dylan-web/static/media/map_xs.17f337a3.png",
+    "static/media/material.3129300c.svg": "/dylan-web/static/media/material.3129300c.svg",
     "static/media/mongodb.028a9cac.png": "/dylan-web/static/media/mongodb.028a9cac.png",
     "static/media/movie.e8762575.gif": "/dylan-web/static/media/movie.e8762575.gif",
     "static/media/react.bc2e3a9e.png": "/dylan-web/static/media/react.bc2e3a9e.png",
-    "static/media/self.5ba8226d.svg": "/dylan-web/static/media/self.5ba8226d.svg"
+    "static/media/self.5ba8226d.svg": "/dylan-web/static/media/self.5ba8226d.svg",
+    "static/media/sketch.96800f39.svg": "/dylan-web/static/media/sketch.96800f39.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.f4d617b6.js",
     "static/css/2.3fb3d1db.chunk.css",
     "static/js/2.ecd01a31.chunk.js",
     "static/css/main.9b753c3a.chunk.css",
-    "static/js/main.cb6085a9.chunk.js"
+    "static/js/main.e5ea0666.chunk.js"
   ]
 }
