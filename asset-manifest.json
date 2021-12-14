@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/dylan-web/static/css/main.61590bac.chunk.css",
-    "main.js": "/dylan-web/static/js/main.5240733e.chunk.js",
-    "main.js.map": "/dylan-web/static/js/main.5240733e.chunk.js.map",
+    "main.js": "/dylan-web/static/js/main.d1a229df.chunk.js",
+    "main.js.map": "/dylan-web/static/js/main.d1a229df.chunk.js.map",
     "runtime-main.js": "/dylan-web/static/js/runtime-main.f4d617b6.js",
     "runtime-main.js.map": "/dylan-web/static/js/runtime-main.f4d617b6.js.map",
     "static/css/2.3fb3d1db.chunk.css": "/dylan-web/static/css/2.3fb3d1db.chunk.css",
@@ -19,7 +19,6 @@
     "static/media/brick.2508e2eb.gif": "/dylan-web/static/media/brick.2508e2eb.gif",
     "static/media/gif.5d0985bf.gif": "/dylan-web/static/media/gif.5d0985bf.gif",
     "static/media/htmlset.d220b82b.png": "/dylan-web/static/media/htmlset.d220b82b.png",
-    "static/media/ionic.779223c1.gif": "/dylan-web/static/media/ionic.779223c1.gif",
     "static/media/mainBall.788f9591.svg": "/dylan-web/static/media/mainBall.788f9591.svg",
     "static/media/map_lg.40661741.png": "/dylan-web/static/media/map_lg.40661741.png",
     "static/media/map_md.faded13e.png": "/dylan-web/static/media/map_md.faded13e.png",
@@ -36,6 +35,6 @@
     "static/css/2.3fb3d1db.chunk.css",
     "static/js/2.ecd01a31.chunk.js",
     "static/css/main.61590bac.chunk.css",
-    "static/js/main.5240733e.chunk.js"
+    "static/js/main.d1a229df.chunk.js"
   ]
 }
