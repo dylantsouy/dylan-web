@@ -19,7 +19,7 @@ import emailjs from "emailjs-com";
 import dayjs from "dayjs";
 import * as utc from "dayjs/plugin/utc";
 import Noty from "../common/Noty";
-import CircularProgress from "@mui/material/CircularProgress";
+import Loading from "../common/Loading";
 
 dayjs.extend(utc);
 
@@ -37,11 +37,11 @@ const Contact = (props) => {
   const [content, setContent] = useState("");
   const [check, setCheck] = useState(false);
   const [notyOpen, setNotyOpen] = useState(false);
+  const [btnDisabled, setBtnDisabled] = useState(true);
   const [noty, setNoty] = useState({
     type: "success",
     text: "",
   });
-  const [btnDisabled, setBtnDisabled] = useState(false);
 
   const emailHandler = (e) => {
     setEmailFormatError(false);
@@ -249,13 +249,7 @@ const Contact = (props) => {
                   type="primaryBtn"
                   text={
                     btnDisabled ? (
-                      <CircularProgress
-                        style={{
-                          color: "#fff",
-                          width: "25px",
-                          height: "25px",
-                        }}
-                      />
+                      <Loading color="white" />
                     ) : (
                       t("input.sendMail")
                     )
