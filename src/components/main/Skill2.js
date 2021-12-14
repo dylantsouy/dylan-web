@@ -12,6 +12,9 @@ import htmlSetLogo from "../../assets/images/htmlset.png";
 import mysqlLogo from "../../assets/images/mysql.png";
 import typescriptLogo from "../../assets/images/typescript.png";
 import mongoDBLogo from "../../assets/images/mongodb.png";
+import sketchLogo from "../../assets/images/sketch.svg";
+import jqueryLogo from "../../assets/images/jquery.png";
+import materialLogo from "../../assets/images/material.svg";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 
 const Skill = (props) => {
@@ -24,10 +27,13 @@ const Skill = (props) => {
     { src: mongoDBLogo, name: "MongoDB" },
     { src: htmlSetLogo, name: "Html + CSS + Javascript" },
     { src: typescriptLogo, name: "Typescript" },
+    { src: jqueryLogo, name: "jQuery" },
     { src: sassLogo, name: "Sass / Less / Scss" },
     { src: gitLogo, name: "Git / Github / Gitlab / Bitbucket" },
     { src: mysqlLogo, name: "SQL Server" },
     { src: herokuLogo, name: "Heroku" },
+    { src: sketchLogo, name: "Sketch" },
+    { src: materialLogo, name: "Material UI / Ant Design / Bootstrap..." },
   ];
   return (
     <div className="skill section">
