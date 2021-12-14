@@ -14,9 +14,6 @@ const Common = ({ children }) => {
     window.scrollTo(0, 0);
     document.querySelector(".banner-left").classList.add("active");
     document.querySelector(".banner-right").classList.add("active");
-    setTimeout(() => {
-      setLoading(false);
-    }, 500);
     window.addEventListener("scroll", function () {
       const top = document.documentElement.scrollTop;
       const home = document.querySelector(".home").offsetTop;
@@ -68,6 +65,9 @@ const Common = ({ children }) => {
     window.onbeforeunload = function () {
       window.scrollTo(0, 0);
     };
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
   };
   
   return (
