@@ -39,7 +39,7 @@ const Banner = (props) => {
       </div>
       <div className="banner-right">
         <div className="banner-img">
-         <img src={selfPhoto} alt="selfPhoto" className="selfPhoto" />
+          <img src={selfPhoto} alt="selfPhoto" className="selfPhoto" />
           <img src={mainBall} alt="mainBall" className="mainBall" />
         </div>
       </div>

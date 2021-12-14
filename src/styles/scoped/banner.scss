@@ -11,6 +11,13 @@
     justify-content: center;
     padding-left: 100px;
     padding-bottom: 100px;
+    transform: translateX(-20px);
+    opacity: 0;
+    transition: 1.5s;
+    &.active{
+      opacity: 1;
+      transform: translateX(0);
+    }
     .name {
       font-size: 60px;
       font-weight: 600;
@@ -40,7 +47,13 @@
     display: flex;
     align-items: flex-end;
     padding-top: 150px;
-    animation: 1.5s hidden-to-show;
+    transform: translateX(20px);
+    opacity: 0;
+    transition: 1.5s;
+    &.active{
+      opacity: 1;
+      transform: translateX(0);
+    }
     .banner-img {
       position: relative;
       padding-left: 100px;
