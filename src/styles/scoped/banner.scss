@@ -10,6 +10,7 @@
     flex-direction: column;
     justify-content: center;
     padding-left: 100px;
+    padding-bottom: 100px;
     .name {
       font-size: 60px;
       font-weight: 600;
@@ -38,7 +39,7 @@
     width: 50%;
     display: flex;
     align-items: flex-end;
-    padding-top: 100px;
+    padding-top: 150px;
     animation: 1.5s hidden-to-show;
     .banner-img {
       position: relative;
@@ -49,8 +50,8 @@
     }
     .mainBall {
       z-index: 0;
-      left: 0px;
-      top: 150px;
+      left: 50px;
+      top: 50px;
       position: absolute;
       height: 380px;
       animation: up-and-down 4s alternate-reverse infinite;
@@ -102,7 +103,7 @@
   .banner {
     .banner-right {
       .banner-img {
-        width: 60%;
+        width: 80%;
       }
     }
   }
@@ -111,34 +112,20 @@
   .banner {
     .banner-right {
       .banner-img {
-        width: 65%;
-      }
-    }
-  }
-}
-@media (max-width: 1500px) {
-  .banner {
-    .banner-right {
-      .banner-img {
-        width: 60%;
+        width: 75%;
       }
     }
   }
 }
 @media (max-width: 1400px) {
   .banner {
-    .banner-right {
-      .banner-img {
-        width: 75%;
-      }
+    .banner-left {
+      padding-bottom: 0;
     }
-  }
-}
-@media (max-width: 1300px) {
-  .banner {
     .banner-right {
+      padding-top: 0;
       .banner-img {
-        width: 78%;
+        width: 80%;
       }
     }
   }
@@ -251,8 +238,8 @@
         padding-left: 0;
       }
       .mainBall {
-        height: 220px;
-        left: -20px;
+        height: 250px;
+        left: 20px;
         top: 0;
       }
     }
