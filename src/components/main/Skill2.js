@@ -84,7 +84,7 @@ const Skill = (props) => {
           <div className="skill-right-body certificates">
             <div className="skill-right-text">
               <FiberManualRecordIcon />
-              伍豐科技股份有限公司 Research & Development Department -
+              伍豐科技股份有限公司 Research and Development Department -
               Frontend Developer ( 2021/2 ~ Now )
             </div>
             <div className="skill-right-text">
