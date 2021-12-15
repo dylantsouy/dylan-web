@@ -92,7 +92,7 @@ html {
 }
 .swiper-button-next,
 .swiper-button-prev {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 0 2px 5px rgba(48, 63, 150, 0.3);
   width: 25px !important;
   height: 25px !important;
@@ -103,13 +103,13 @@ html {
   justify-content: center;
   text-align: center;
   &::after {
-    color: #fff;
+    color: $primary_bg;
     font-size: 16px !important;
     font-weight: 800;
-    text-shadow: 0 0 2px $primary_bg;
+    text-shadow: 0 0 2px $light_bg;
   }
   &:hover {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 1);
   }
 }
 .swiper-wrapper{
