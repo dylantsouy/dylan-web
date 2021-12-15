@@ -12,7 +12,13 @@ export const LanguageProvider = ({ children }) => {
   }, []);
 
   const fetchData = async () => {
-    setUserLanguage(await localforage.getItem("rcml-lang") || 'us');
+    let lang = await localforage.getItem("rcml-lang");
+    if (!Object.keys(dictionaryList).includes(lang)) {
+      await localforage.setItem("rcml-lang", "us");
+      setUserLanguage("us");
+    } else {
+      setUserLanguage(lang || "us");
+    }
   };
 
   const provider = {
