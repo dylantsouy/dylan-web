@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import Bottom from "./Bottom";
 import Loading from "../common/Loading";
+import BottomTop from "./BottomTop";
 
 const Common = ({ children }) => {
   const [loading, setLoading] = useState(true);
@@ -25,11 +26,13 @@ const Common = ({ children }) => {
       const h = window.screen.height;
 
       if (top + h / 2 > home && top + h / 2 < about) {
+        document.querySelector(".navbar").classList.remove("have-color");
         document.querySelector(".home-nav").classList.add("active");
       } else {
         document.querySelector(".home-nav").classList.remove("active");
       }
       if (top + h / 2 > about && top + h / 2 < skill) {
+        document.querySelector(".navbar").classList.add("have-color");
         document.querySelector(".about-left").classList.add("active");
         document.querySelector(".about-name").classList.add("active");
         document.querySelector(".about-position").classList.add("active");
@@ -88,6 +91,7 @@ const Common = ({ children }) => {
       >
         <Navbar />
         <>{children}</>
+        <BottomTop />
         <Bottom />
       </div>
     </>

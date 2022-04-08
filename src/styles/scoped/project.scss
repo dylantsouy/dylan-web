@@ -1,5 +1,6 @@
 .project {
-  background-color: $light_bg;
+  background-color: $second_bg;
+  background-image: linear-gradient(-60deg, #dcdddd 0%, #66b2b0 100%);
   .main-area {
     .project-swiper{
       transform: translateX(-1200px);
@@ -14,8 +15,7 @@
       justify-content: center;
       height: 195px;
       border-radius: 25px;
-      background-color: rgb(179, 196, 228);
-      background-image:linear-gradient(to top,rgb(247, 214, 199) , rgb(253, 234, 221) );
+      background-image:linear-gradient(to top,$orange_bg , $light_bg );
       .rwd-text{
         display: none;
       }
@@ -97,7 +97,6 @@
 }
 @media (max-width: 1200px) {
   .project {
-    background-size: 65%;
     .main-area {
       .project-item {
         height: 240px;

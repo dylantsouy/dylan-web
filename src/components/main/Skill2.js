@@ -3,6 +3,7 @@ import { useTranslation } from "../../langs/useTranslation";
 import Tooltip from "@mui/material/Tooltip";
 import { toolsSet1 } from "../../helpers/skillsImg";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
+import downBg from "../../assets/images/down-bg.png";
 
 const Skill = () => {
   const { t } = useTranslation("skill");
@@ -74,6 +75,9 @@ const Skill = () => {
           </div>
         </div>
       </div>
+			<div className="down-bg">
+				<img src={downBg} alt="down-bg" />
+			</div>
     </div>
   );
 };

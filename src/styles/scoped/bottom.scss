@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: $dark_bg;
-  color: #333;
+  background-color: $second_bg;
+  color: #fff;
   font-weight: 600;
   padding: 10px 30px;
   font-size: 12px;
@@ -21,13 +21,14 @@
 
   .bottom-copyright-rwd {
     display: none;
+    color: #fff;
   }
   .bottom-link {
     display: flex;
     a {
       display: flex;
       align-items: center;
-      color: #333;
+      color: $dark_text;
       margin-right: 10px;
     }
   }

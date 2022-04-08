@@ -53,7 +53,7 @@ const Project = (props) => {
       <div className="title">
         <div className="title-inner">{t("myProjects")}</div>
       </div>
-      <div className="subtitle">{t("subtitle")}</div>
+      <div className="subtitle-white">{t("subtitle")}</div>
       <div className="main-area">
         <Swiper
           slidesPerView={1}

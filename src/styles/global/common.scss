@@ -13,7 +13,7 @@ body {
   font-family: "Poppins";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #333;
+  color: $dark_text;
   overflow-x: hidden;
 }
 html {
@@ -42,12 +42,11 @@ html {
   text-align: center;
   padding: 0 20px;
   min-height: 50px;
-  box-shadow: 0 3px 10px #999;
   border-radius: $border_radius;
   cursor: pointer;
   transition: 0.3s linear;
   text-decoration: none;
-  &.disabled{
+  &.disabled {
     background-color: $gray_text;
     cursor: not-allowed;
   }
@@ -59,8 +58,8 @@ html {
     }
   }
   &.secBtn {
+    background-color: #fff;
     border: 1px solid $primary_bg;
-    box-shadow: 0 0 5px $primary_bg;
     color: $primary_bg;
     &:hover {
       background-color: $primary_bg;
@@ -84,6 +83,12 @@ html {
   font-size: 14px;
   letter-spacing: 2px;
   color: $gray_text;
+  padding-bottom: 50px;
+}
+.subtitle-white {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #fff;
   padding-bottom: 50px;
 }
 
@@ -112,7 +117,7 @@ html {
     background-color: rgba(255, 255, 255, 1);
   }
 }
-.swiper-wrapper{
+.swiper-wrapper {
   padding: 20px 0;
 }
 
@@ -173,6 +178,15 @@ html {
       background: #fff;
     }
   }
+}
+.align-items-center {
+  align-items: center !important;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 @media (max-width: 1500px) {
@@ -240,7 +254,7 @@ html {
     top: 55% !important;
     padding: 2px;
   }
-  .swiper-button-next{
+  .swiper-button-next {
     right: 2% !important;
   }
   .swiper-button-prev {
@@ -260,7 +274,7 @@ html {
     height: 18px !important;
     padding: 0px !important;
   }
-  .swiper-button-next{
+  .swiper-button-next {
     right: 1.5% !important;
   }
   .swiper-button-prev {

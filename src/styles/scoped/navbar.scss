@@ -8,7 +8,9 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 0 0 60px;
-  background-color: #f5f2e7;
+  &.have-color{
+    background-color: $second_bg;
+  }
   .navbar-left {
     cursor: pointer;
     display: flex;
@@ -26,19 +28,19 @@
       align-items: center;
       .navbar-item {
         text-decoration: none;
-        color: #333;
+        color: #fff;
         margin: 0 20px;
         font-weight: 600;
         cursor: pointer;
         &.active {
-          color: $primary_bg;
+          color: $orange_bg;
           position: relative;
           &::after {
             position: absolute;
             content: "";
             height: 2px;
             width: 60%;
-            background-color: $primary_bg;
+            background-color: $orange_bg;
             bottom: -2px;
             right: 20%;
           }
@@ -76,7 +78,7 @@
 }
 .MuiDrawer-paper {
   .MuiBox-root {
-    background-color: $dark_bg;
+    background-color: $second_bg;
     color: #fff;
     img {
       cursor: pointer;
@@ -107,6 +109,7 @@
       }
       .navbar-rwd-button {
         display: flex;
+        color: $dark_text;
         margin-right: 10px;
         cursor: pointer;
       }
