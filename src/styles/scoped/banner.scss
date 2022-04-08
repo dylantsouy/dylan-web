@@ -95,6 +95,7 @@
     bottom: -10px;
     left: 0;
     img {
+      height: 100%;
       width: 100%;
     }
     .go-to {
@@ -279,7 +280,7 @@
     }
     .banner-right {
       .banner-img {
-        width: 200px !important;
+        width: 230px !important;
         padding-left: 0 !important;
       }
       .mainBall {
@@ -288,5 +289,8 @@
         top: 0 !important;
       }
     }
+  }
+  .bg-shape-inner {
+    bottom: -20px !important;
   }
 }
