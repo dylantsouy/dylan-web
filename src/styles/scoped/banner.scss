@@ -245,6 +245,7 @@
       }
     }
     .banner-right {
+      min-height: 300px !important;
       padding-top: 100px !important;
       width: 100% !important;
       justify-content: center !important;
@@ -254,7 +255,7 @@
 
 @media (max-width: 550px) {
   .banner {
-    padding-bottom: 0 !important;
+    padding-bottom: 20px !important;
     .banner-left {
       width: 85% !important;
       .hello {
@@ -291,6 +292,6 @@
     }
   }
   .bg-shape-inner {
-    bottom: -20px !important;
+    bottom: -15px !important;
   }
 }
