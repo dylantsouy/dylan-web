@@ -30,7 +30,7 @@ const BottomTop = () => {
           <div className="left-area">
             <div className="bottomTop-heading pixFadeUp">
               <h2 className="title">
-                Thank you for visiting
+                Thank You For Visiting
                 <br />
                 My Web.
               </h2>
