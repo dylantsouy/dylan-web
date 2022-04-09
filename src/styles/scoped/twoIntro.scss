@@ -1,0 +1,246 @@
+.twoIntro-outer {
+  padding: 105px 0 60px;
+  overflow: hidden;
+  position: relative;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .twoIntro-toparea {
+    padding-bottom: 200px;
+  }
+  .twoIntro-left {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 48%;
+    padding-right: 15px;
+    padding-left: 55px;
+    .twoIntro-content {
+      padding-top: 70px;
+      .twoIntro-title {
+        font-size: 34px;
+        line-height: 50px;
+        margin-bottom: 20px;
+        visibility: visible;
+        animation-delay: 0.2s;
+      }
+    }
+  }
+  .twoIntro-right {
+    position: relative;
+    width: 45%;
+  }
+  .bottom-left {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 48%;
+    padding-right: 15px;
+    padding-left: 55px;
+  }
+  .bottom-right {
+    position: relative;
+    width: 45%;
+  }
+}
+
+.twoIntro-image-wrapper {
+  height: 600px;
+  .image-one {
+    z-index: 2;
+    position: absolute;
+    margin-left: 40px;
+    margin-top: -90px;
+  }
+  .image-three {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 300px;
+  }
+}
+
+.interface-content {
+  .list-items {
+    li {
+      line-height: 40px;
+      font-size: 18px;
+    }
+  }
+}
+
+.svgbg-one {
+  position: absolute;
+  top: 55px;
+  left: 50px;
+  z-index: -1;
+  -webkit-animation: wave 3s 0.1s infinite linear;
+  animation: wave 3s 0.1s infinite linear;
+}
+.svgbg-two {
+  position: absolute;
+  top: -70px;
+  left: -7%;
+  z-index: -1;
+  -webkit-animation: wave 3s 0.1s infinite linear;
+  animation: wave 3s 0.1s infinite linear;
+}
+
+.border-wrap {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  max-width: 775px;
+  -webkit-transform: translate(-17%, -54%);
+  -ms-transform: translate(-17%, -54%);
+  transform: translate(-17%, -54%);
+  width: 100%;
+  z-index: -1;
+  .ball {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #fad899;
+    top: 49%;
+    left: 45%;
+    z-index: 22;
+  }
+}
+
+.path {
+  stroke-dasharray: 6;
+  -webkit-animation: dash 30s linear infinite;
+  animation: dash 30s linear infinite;
+}
+
+@-webkit-keyframes dash {
+  /*   to {
+      stroke-dashoffset: 1000;
+    } */
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+  }
+}
+
+@keyframes dash {
+  /*   to {
+      stroke-dashoffset: 1000;
+    } */
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+  }
+}
+@media (max-width: 1200px) {
+  .twoIntro-outer {
+    padding: 105px 0 60px;
+
+    .twoIntro-toparea {
+      padding-bottom: 100px;
+    }
+    .twoIntro-left {
+      width: 50%;
+      .twoIntro-content {
+        padding-top: 0;
+        .twoIntro-title {
+          font-size: 26px;
+          line-height: 40px;
+        }
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+    .twoIntro-right {
+      width: 100%;
+    }
+    .bottom-left {
+      padding-right: 0;
+      padding-left: 0;
+    }
+    .bottom-right {
+      position: relative;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .twoIntro-image-wrapper {
+    height: 0;
+    .image-one {
+      display: none;
+    }
+    .image-three {
+      display: none;
+    }
+  }
+  .interface-content {
+    margin-top: 50px;
+    .interface-title {
+      h2 {
+        font-size: 26px;
+        line-height: 40px;
+        margin-bottom: 20px;
+      }
+      p {
+        margin-bottom: 20px;
+      }
+    }
+    .list-items {
+      margin-bottom: 20px;
+      li {
+        line-height: 30px;
+        font-size: 14px;
+      }
+    }
+  }
+  .svgbg-one {
+    top: 25px;
+    left: -30%;
+    z-index: -1;
+  }
+  .svgbg-two {
+    top: -650px;
+    left: 60%;
+  }
+}
+
+@media (max-width: 600px) {
+  .twoIntro-outer {
+    .twoIntro-left {
+      padding-left: 0;
+      width: 100%;
+      .twoIntro-content {
+        .twoIntro-title {
+          font-size: 16px;
+        }
+        p {
+          font-size: 12px;
+        }
+        li{
+          font-size: 12px;
+        }
+      }
+    }
+    .bottom-right {
+      width: 100%;
+      .twoIntro-content {
+        .twoIntro-title {
+          font-size: 16px;
+        }
+        p {
+          font-size: 12px;
+        }
+        li{
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

@@ -1,21 +1,21 @@
 .project {
   background-color: $second_bg;
   background-image: linear-gradient(-60deg, #dcdddd 0%, #66b2b0 100%);
-  .title-inner{
+  .title-inner {
     color: #fff;
     &::after {
       background: $orange_bg;
     }
   }
-  .subtitle{
+  .subtitle {
     color: $light_bg;
   }
   .main-area {
-    .project-swiper{
-      transform: translateX(-1200px);
-      transition: 1.5s;
-      &.active{
-        transform: translateX(0);
+    .project-swiper {
+      opacity: 0;
+      transition: 2.5s;
+      &.active {
+        opacity: 1;
       }
     }
     .project-item {
@@ -24,8 +24,8 @@
       justify-content: center;
       height: 195px;
       border-radius: 25px;
-      background-image:linear-gradient(to top,$orange_bg , $orange_bg );
-      .rwd-text{
+      background-image: linear-gradient(to top, $orange_bg, $orange_bg);
+      .rwd-text {
         display: none;
       }
       .project-img {
@@ -214,7 +214,7 @@
       .project-item {
         height: 170px;
         position: relative;
-        .rwd-text{
+        .rwd-text {
           font-size: 12px;
           display: flex;
           justify-content: center;
