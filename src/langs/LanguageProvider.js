@@ -5,7 +5,7 @@ import * as localforage from "localforage";
 
 // it provides the language context to app
 export const LanguageProvider = ({ children }) => {
-  const [userLanguage, setUserLanguage] = useState("us");
+  const [userLanguage, setUserLanguage] = useState("tw");
 
   useEffect(() => {
     fetchData();
@@ -19,10 +19,10 @@ export const LanguageProvider = ({ children }) => {
      * By Dylan 
      * */
     if (!Object.keys(dictionaryList).includes(lang)) {
-      await localforage.setItem("rcml-lang", "us");
-      setUserLanguage("us");
+      await localforage.setItem("rcml-lang", "tw");
+      setUserLanguage("tw");
     } else {
-      setUserLanguage(lang || "us");
+      setUserLanguage(lang || "tw");
     }
   };
 
@@ -30,7 +30,7 @@ export const LanguageProvider = ({ children }) => {
     userLanguage,
     dictionary: dictionaryList[userLanguage],
     userLanguageChange: (selected) => {
-      const newLanguage = languageOptions[selected] ? selected : "us";
+      const newLanguage = languageOptions[selected] ? selected : "tw";
       setUserLanguage(newLanguage);
       localforage.setItem("rcml-lang", newLanguage);
     },
