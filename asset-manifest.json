@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/dylan-web/static/css/main.d9145d47.chunk.css",
-    "main.js": "/dylan-web/static/js/main.9fca7d36.chunk.js",
-    "main.js.map": "/dylan-web/static/js/main.9fca7d36.chunk.js.map",
+    "main.css": "/dylan-web/static/css/main.91fc8b57.chunk.css",
+    "main.js": "/dylan-web/static/js/main.31e5c7d1.chunk.js",
+    "main.js.map": "/dylan-web/static/js/main.31e5c7d1.chunk.js.map",
     "runtime-main.js": "/dylan-web/static/js/runtime-main.f4d617b6.js",
     "runtime-main.js.map": "/dylan-web/static/js/runtime-main.f4d617b6.js.map",
     "static/css/2.3fb3d1db.chunk.css": "/dylan-web/static/css/2.3fb3d1db.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.b6d37f80.chunk.js.map": "/dylan-web/static/js/2.b6d37f80.chunk.js.map",
     "index.html": "/dylan-web/index.html",
     "static/css/2.3fb3d1db.chunk.css.map": "/dylan-web/static/css/2.3fb3d1db.chunk.css.map",
-    "static/css/main.d9145d47.chunk.css.map": "/dylan-web/static/css/main.d9145d47.chunk.css.map",
+    "static/css/main.91fc8b57.chunk.css.map": "/dylan-web/static/css/main.91fc8b57.chunk.css.map",
     "static/js/2.b6d37f80.chunk.js.LICENSE.txt": "/dylan-web/static/js/2.b6d37f80.chunk.js.LICENSE.txt",
     "static/media/DylanEnglish.d9b467f1.gif": "/dylan-web/static/media/DylanEnglish.d9b467f1.gif",
     "static/media/FuYen, Tsou - CV (Nov 2021).3a095771.pdf": "/dylan-web/static/media/FuYen, Tsou - CV (Nov 2021).3a095771.pdf",
@@ -23,7 +23,7 @@
     "static/media/htmlset.d220b82b.png": "/dylan-web/static/media/htmlset.d220b82b.png",
     "static/media/jquery.619df51a.png": "/dylan-web/static/media/jquery.619df51a.png",
     "static/media/laravel.42ec86db.png": "/dylan-web/static/media/laravel.42ec86db.png",
-    "static/media/logo.222fe6ce.svg": "/dylan-web/static/media/logo.222fe6ce.svg",
+    "static/media/logo.d72887e1.png": "/dylan-web/static/media/logo.d72887e1.png",
     "static/media/mainBall.e4bfe7e0.svg": "/dylan-web/static/media/mainBall.e4bfe7e0.svg",
     "static/media/map_lg.40661741.png": "/dylan-web/static/media/map_lg.40661741.png",
     "static/media/map_md.faded13e.png": "/dylan-web/static/media/map_md.faded13e.png",
@@ -41,7 +41,7 @@
     "static/js/runtime-main.f4d617b6.js",
     "static/css/2.3fb3d1db.chunk.css",
     "static/js/2.b6d37f80.chunk.js",
-    "static/css/main.d9145d47.chunk.css",
-    "static/js/main.9fca7d36.chunk.js"
+    "static/css/main.91fc8b57.chunk.css",
+    "static/js/main.31e5c7d1.chunk.js"
   ]
 }
