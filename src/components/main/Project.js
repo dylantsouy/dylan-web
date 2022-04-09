@@ -7,11 +7,11 @@ import project5 from "../../assets/images/brick.gif";
 import { Swiper, SwiperSlide } from "swiper/react/swiper-react.js";
 
 // Import Swiper styles
-import SwiperCore, { Navigation } from "swiper"; // Styles must use direct files imports
+import SwiperCore, { Navigation, Autoplay } from "swiper"; // Styles must use direct files imports
 import "swiper/swiper.scss"; // core Swiper
 import "swiper/modules/navigation/navigation.scss"; // Navigation module
 import "swiper/modules/pagination/pagination.scss"; // Pagination module
-SwiperCore.use([Navigation]);
+SwiperCore.use([Navigation, Autoplay]);
 
 const Project = (props) => {
   const { t } = useTranslation("project");
@@ -45,7 +45,6 @@ const Project = (props) => {
     if (link) {
       window.open(link);
     } else {
-
     }
   };
   return (
@@ -53,13 +52,18 @@ const Project = (props) => {
       <div className="title">
         <div className="title-inner">{t("myProjects")}</div>
       </div>
-      <div className="subtitle-white">{t("subtitle")}</div>
+      <div className="subtitle">{t("subtitle")}</div>
       <div className="main-area">
         <Swiper
           slidesPerView={1}
           spaceBetween={30}
           slidesPerGroup={1}
           loop={true}
+          autoplay={{
+            delay: 0,
+            disableOnInteraction: false
+          }}
+          speed={20000}
           breakpoints={{
             500: {
               slidesPerView: 1,
@@ -74,7 +78,6 @@ const Project = (props) => {
               slidesPerView: 4,
             },
           }}
-          navigation={true}
           className="project-swiper"
         >
           {projectSet.length > 0 &&

@@ -55,7 +55,8 @@ const Banner = (props) => {
           </div>
         </div>
         <div className="bottom-shape">
-          <img src={bannerShape} alt="circle" />
+          <img className="rwd" src={bannerShape} alt="circle" data-parallax='{"y": 15}' />
+          <img className="normal" src={bannerShape} alt="circle" data-parallax='{"y": 25}' />
         </div>
       </div>
     </div>

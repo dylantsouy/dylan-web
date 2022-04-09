@@ -1,6 +1,15 @@
 .project {
   background-color: $second_bg;
   background-image: linear-gradient(-60deg, #dcdddd 0%, #66b2b0 100%);
+  .title-inner{
+    color: #fff;
+    &::after {
+      background: $orange_bg;
+    }
+  }
+  .subtitle{
+    color: $light_bg;
+  }
   .main-area {
     .project-swiper{
       transform: translateX(-1200px);
@@ -15,7 +24,7 @@
       justify-content: center;
       height: 195px;
       border-radius: 25px;
-      background-image:linear-gradient(to top,$orange_bg , $light_bg );
+      background-image:linear-gradient(to top,$orange_bg , $orange_bg );
       .rwd-text{
         display: none;
       }
@@ -213,7 +222,7 @@
           position: absolute;
           bottom: -25px;
           right: 0;
-          color: $primary_bg;
+          color: $dark_text;
         }
       }
     }

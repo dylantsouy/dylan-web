@@ -94,6 +94,13 @@
     width: 100%;
     bottom: -10px;
     left: 0;
+    .rwd {
+      display: none;
+    }
+    .normal {
+      padding-bottom: 10px;
+      display: block;
+    }
     img {
       height: 100%;
       width: 100%;
@@ -251,11 +258,20 @@
       justify-content: center !important;
     }
   }
+  .bg-shape-inner {
+    .rwd{
+      padding-bottom: 10px;
+      display: block !important;
+    }
+    .normal {
+      display: none !important;
+    }
+  }
 }
 
 @media (max-width: 550px) {
   .banner {
-    padding-bottom: 20px !important;
+    padding-bottom: 30px !important;
     .banner-left {
       width: 85% !important;
       .hello {
@@ -292,6 +308,6 @@
     }
   }
   .bg-shape-inner {
-    bottom: -15px !important;
+    bottom: -10px !important;
   }
 }

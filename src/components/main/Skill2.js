@@ -76,7 +76,8 @@ const Skill = () => {
         </div>
       </div>
 			<div className="down-bg">
-				<img src={downBg} alt="down-bg" />
+				<img className="normal" src={downBg} alt="down-bg"  data-parallax='{"y": 200}'/>
+				<img className="rwd" src={downBg} alt="down-bg"  data-parallax='{"y": 380}'/>
 			</div>
     </div>
   );

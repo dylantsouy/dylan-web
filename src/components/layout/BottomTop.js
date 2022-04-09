@@ -4,7 +4,6 @@ import leftPic from "../../assets/images/left-pic.png";
 import rightPic from "../../assets/images/right-pic.png";
 import ClickBtn from "../common/ClickBtn";
 import { scrollTo } from "../../helpers/router";
-import "../../helpers/jquery.parallax-scroll";
 
 const BottomTop = () => {
   const { t } = useTranslation("common");
@@ -14,13 +13,13 @@ const BottomTop = () => {
       <div className="bg-shape">
         <img
           src={leftPic}
-          data-parallax='{"x": -130}'
+          data-parallax='{"x": -150}'
           alt="shape"
           className="shape-left"
         />
         <img
           src={rightPic}
-          data-parallax='{"x": 130}'
+          data-parallax='{"x": 150}'
           alt="shape"
           className="shape-right"
         />
