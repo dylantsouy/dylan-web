@@ -63,7 +63,7 @@ const Project = (props) => {
             delay: 0,
             disableOnInteraction: false
           }}
-          speed={20000}
+          speed={10000}
           breakpoints={{
             500: {
               slidesPerView: 1,

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import logo from "../../assets/images/logo.svg";
-import logoW from "../../assets/images/logo.svg";
+import logo from "../../assets/images/logo.png";
+import logoW from "../../assets/images/logo.png";
 import { useTranslation } from "../../langs/useTranslation";
 import LangSelect from "../common/LangSelect";
 import DehazeIcon from "@mui/icons-material/Dehaze";
