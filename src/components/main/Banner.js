@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "../../langs/useTranslation";
-import selfPhoto from "../../assets/images/self.svg";
+import { ReactComponent as SelfPhoto } from "../../assets/images/self.svg";
 import mainBall from "../../assets/images/mainBall.svg";
 import bannerShape from "../../assets/images/banner-shape.png";
 import ReactTypingEffect from "react-typing-effect";
@@ -43,7 +43,7 @@ const Banner = (props) => {
         </div>
         <div className="banner-right">
           <div className="banner-img">
-            <img src={selfPhoto} alt="selfPhoto" className="selfPhoto" />
+            <SelfPhoto className="selfPhoto" />
             <img src={mainBall} alt="mainBall" className="mainBall" />
           </div>
         </div>

@@ -46,7 +46,7 @@ const TwoIntro = (props) => {
               <OrangeBall
                 data-parallax='{"y" : -50}'
                 alt="interface"
-                classNameName="svgbg-two"
+                className="svgbg-two"
               />
             </div>
           </div>
