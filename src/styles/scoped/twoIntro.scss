@@ -43,6 +43,15 @@
   .bottom-right {
     position: relative;
     width: 45%;
+    .twoIntro-content {
+      .twoIntro-title {
+        font-size: 34px;
+        line-height: 50px;
+        margin-bottom: 20px;
+        visibility: visible;
+        animation-delay: 0.2s;
+      }
+    }
   }
 }
 

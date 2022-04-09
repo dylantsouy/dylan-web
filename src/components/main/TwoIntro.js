@@ -14,18 +14,15 @@ const TwoIntro = (props) => {
         <div className="row">
           <div className="twoIntro-left">
             <div className="twoIntro-content interface-content">
-              <div className="pixFadeUp">
+              <div>
                 <h2 className="twoIntro-title pixFadeUp">
                   {t("titleTop1")}
                   <br />
                   <span>{t("titleTop2")}</span>
                 </h2>
 
-                <p className="pixFadeUp">
-                  {t("subtitleTop1")}
-                  <br />
-                  {t("subtitleTop2")}
-                </p>
+                <p>{t("subtitleTop1")}</p>
+                <p>{t("subtitleTop2")}</p>
               </div>
 
               <ul className="list-items pixFadeUp">
@@ -68,14 +65,14 @@ const TwoIntro = (props) => {
 
         <div className="bottom-right">
           <div className="twoIntro-content interface-content">
-            <div className="pixFadeUp">
+            <div>
               <h2 className="twoIntro-title pixFadeUp">
                 {t("titleBottom1")}
                 <br />
                 <span>{t("titleBottom2")}</span>
               </h2>
 
-              <p className="pixFadeUp">{t("subtitleBottom")}</p>
+              <p>{t("subtitleBottom")}</p>
             </div>
 
             <ul className="list-items list-with-icon pixFadeUp">
