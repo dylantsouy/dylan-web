@@ -71,7 +71,7 @@ const Common = ({ children }) => {
     };
     setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 2000);
   };
   
   return (
