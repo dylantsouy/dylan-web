@@ -3,7 +3,6 @@ import Navbar from "./Navbar";
 import Bottom from "./Bottom";
 import Loading from "../common/Loading";
 import BottomTop from "./BottomTop";
-import TwoIntro from "../main/TwoIntro";
 
 const Common = ({ children }) => {
   const [loading, setLoading] = useState(true);
@@ -92,7 +91,6 @@ const Common = ({ children }) => {
       >
         <Navbar />
         <>{children}</>
-        <TwoIntro />
         <BottomTop />
         <Bottom />
       </div>

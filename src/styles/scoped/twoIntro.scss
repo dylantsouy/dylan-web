@@ -1,5 +1,5 @@
 .twoIntro-outer {
-  padding: 105px 0 60px;
+  padding: 255px 0 160px;
   overflow: hidden;
   position: relative;
   img {
@@ -155,6 +155,19 @@
     }
     .twoIntro-left {
       width: 50%;
+      .twoIntro-content {
+        padding-top: 0;
+        .twoIntro-title {
+          font-size: 26px;
+          line-height: 40px;
+        }
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+    .bottom-right {
+      width: 100%;
       .twoIntro-content {
         padding-top: 0;
         .twoIntro-title {
