@@ -22,9 +22,23 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      position: relative;
       height: 195px;
       border-radius: 25px;
       background-image: linear-gradient(to top, $orange_bg, $orange_bg);
+      .badge{
+        z-index: 10;
+        position: absolute;
+        top: 25px;
+        left: 0;
+        background-color: $orange_bg_dark;
+        color:#fff;
+        font-size: 16px;
+        box-shadow: 1px 0 5px #999;
+        padding: 2px 10px;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+      }
       .rwd-text {
         display: none;
       }

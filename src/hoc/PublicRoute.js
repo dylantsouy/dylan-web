@@ -3,7 +3,7 @@ import React from "react";
 import { Route } from "react-router-dom";
 import Common from "../components/layout/Common";
 
-const PrivateRoute = ({ component: Component, ...props }) => {
+const PublicRoute = ({ component: Component, ...props }) => {
 
   return (
     <Route
@@ -17,4 +17,4 @@ const PrivateRoute = ({ component: Component, ...props }) => {
   );
 };
 
-export default PrivateRoute;
+export default PublicRoute;
