@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/dylan-web/static/css/main.215c2bab.chunk.css",
-    "main.js": "/dylan-web/static/js/main.2ca1f823.chunk.js",
-    "main.js.map": "/dylan-web/static/js/main.2ca1f823.chunk.js.map",
-    "runtime-main.js": "/dylan-web/static/js/runtime-main.f4d617b6.js",
-    "runtime-main.js.map": "/dylan-web/static/js/runtime-main.f4d617b6.js.map",
-    "static/css/2.3fb3d1db.chunk.css": "/dylan-web/static/css/2.3fb3d1db.chunk.css",
-    "static/js/2.f4fa647c.chunk.js": "/dylan-web/static/js/2.f4fa647c.chunk.js",
-    "static/js/2.f4fa647c.chunk.js.map": "/dylan-web/static/js/2.f4fa647c.chunk.js.map",
+    "main.css": "/dylan-web/static/css/main.3f29d586.chunk.css",
+    "main.js": "/dylan-web/static/js/main.29cc6ae8.chunk.js",
+    "main.js.map": "/dylan-web/static/js/main.29cc6ae8.chunk.js.map",
+    "runtime-main.js": "/dylan-web/static/js/runtime-main.0d68b7c3.js",
+    "runtime-main.js.map": "/dylan-web/static/js/runtime-main.0d68b7c3.js.map",
+    "static/css/2.32026e26.chunk.css": "/dylan-web/static/css/2.32026e26.chunk.css",
+    "static/js/2.848d8d8f.chunk.js": "/dylan-web/static/js/2.848d8d8f.chunk.js",
+    "static/js/2.848d8d8f.chunk.js.map": "/dylan-web/static/js/2.848d8d8f.chunk.js.map",
     "index.html": "/dylan-web/index.html",
-    "static/css/2.3fb3d1db.chunk.css.map": "/dylan-web/static/css/2.3fb3d1db.chunk.css.map",
-    "static/css/main.215c2bab.chunk.css.map": "/dylan-web/static/css/main.215c2bab.chunk.css.map",
-    "static/js/2.f4fa647c.chunk.js.LICENSE.txt": "/dylan-web/static/js/2.f4fa647c.chunk.js.LICENSE.txt",
+    "static/css/2.32026e26.chunk.css.map": "/dylan-web/static/css/2.32026e26.chunk.css.map",
+    "static/css/main.3f29d586.chunk.css.map": "/dylan-web/static/css/main.3f29d586.chunk.css.map",
+    "static/js/2.848d8d8f.chunk.js.LICENSE.txt": "/dylan-web/static/js/2.848d8d8f.chunk.js.LICENSE.txt",
     "static/media/DylanEnglish.d9b467f1.gif": "/dylan-web/static/media/DylanEnglish.d9b467f1.gif",
     "static/media/FuYen, Tsou - CV (Nov 2021).7ab16f76.pdf": "/dylan-web/static/media/FuYen, Tsou - CV (Nov 2021).7ab16f76.pdf",
     "static/media/aboutPic.f4ac3e6d.png": "/dylan-web/static/media/aboutPic.f4ac3e6d.png",
     "static/media/flag-icons.min.css": "/dylan-web/static/media/zw.cd37458b.svg",
     "static/media/banner-shape.bb9ef0cd.png": "/dylan-web/static/media/banner-shape.bb9ef0cd.png",
-    "static/media/brick.2508e2eb.gif": "/dylan-web/static/media/brick.2508e2eb.gif",
     "static/media/dashLine.1b27d034.svg": "/dylan-web/static/media/dashLine.1b27d034.svg",
     "static/media/down-bg.d8aa4d75.png": "/dylan-web/static/media/down-bg.d8aa4d75.png",
     "static/media/gif.5d0985bf.gif": "/dylan-web/static/media/gif.5d0985bf.gif",
@@ -43,10 +42,10 @@
     "static/media/sketch.96800f39.svg": "/dylan-web/static/media/sketch.96800f39.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f4d617b6.js",
-    "static/css/2.3fb3d1db.chunk.css",
-    "static/js/2.f4fa647c.chunk.js",
-    "static/css/main.215c2bab.chunk.css",
-    "static/js/main.2ca1f823.chunk.js"
+    "static/js/runtime-main.0d68b7c3.js",
+    "static/css/2.32026e26.chunk.css",
+    "static/js/2.848d8d8f.chunk.js",
+    "static/css/main.3f29d586.chunk.css",
+    "static/js/main.29cc6ae8.chunk.js"
   ]
 }
