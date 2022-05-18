@@ -10,7 +10,6 @@ import SwiperCore, { Navigation, Autoplay } from "swiper"; // Styles must use di
 import "swiper/swiper.scss"; // core Swiper
 import "swiper/modules/navigation/navigation.scss"; // Navigation module
 import "swiper/modules/pagination/pagination.scss"; // Pagination module
-import { Badge } from "@mui/material";
 SwiperCore.use([Navigation, Autoplay]);
 
 const Project = () => {

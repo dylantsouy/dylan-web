@@ -1,10 +1,12 @@
 import React from "react";
 
 const Overlay = (props) => {
+  const { clickHandler, color } = props;
   return (
     <div
-      onClick={props.clickHandler}
-      className={props.color === "black" ? "overlay" : "overlayWithoutColor"}
+      data-testid="overlay"
+      onClick={clickHandler}
+      className={color === "black" ? "overlay" : "overlayWithoutColor"}
     />
   );
 };
