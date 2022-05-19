@@ -7,7 +7,6 @@ const ClickBtn = (props) => {
   };
   return (
     <div
-      data-testid="clickBtn"
       onClick={!disabled ? onClick : returnHandler()}
       className={`${type} click-btn ${disabled ? "disabled" : ""}`}
       style={{

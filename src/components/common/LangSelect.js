@@ -23,8 +23,8 @@ const LangSelect = () => {
 
   const renderLangMenu = (
     <Select
-      data-testid="langSelectItems"
       open={open}
+      id="langMenu"
       defaultValue={userLanguage}
       onClose={handleLangMenuClose}
       value={userLanguage}
@@ -42,13 +42,11 @@ const LangSelect = () => {
   return (
     <div className="langSelect">
       <IconButton
-        data-testid="langSelect"
         className="langBtn"
         aria-label="lang"
         onClick={handleLangMenuOpen}
       >
         <span
-          data-testid="selectedLang"
           className={`flag-icon flag-icon-${userLanguage && userLanguage}`}
         />
       </IconButton>

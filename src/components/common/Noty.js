@@ -10,7 +10,6 @@ const Noty = (props) => {
 
   return (
     <Snackbar
-      data-testid="Noty"
       open={open}
       autoHideDuration={3000}
       onClose={() => setOpen(false)}
