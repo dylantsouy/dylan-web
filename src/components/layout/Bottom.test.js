@@ -2,6 +2,10 @@ import React from "react";
 import Bottom from "./Bottom";
 import { cleanup } from "@testing-library/react";
 import { createRenderer } from 'react-test-renderer/shallow';
+import Tooltip from "@mui/material/Tooltip";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import EmailIcon from "@mui/icons-material/Email";
 
 const setup = () => {
   const renderer = createRenderer()
@@ -42,9 +46,9 @@ describe('components common', () => {
 
     it("should render bottom-right correctly", () => {
       const tooltips = [
-        { title: 'Github', href: 'https://github.com/dylantsouy' },
-        { title: 'Facebook', href: 'https://www.facebook.com/fu.y.zou' },
-        { title: 'Email to me', href: 'mailto:bear817005@gmail.com' }
+        { title: 'Github', href: 'https://github.com/dylantsouy', icon: GitHubIcon },
+        { title: 'Facebook', href: 'https://www.facebook.com/fu.y.zou', icon: FacebookIcon },
+        { title: 'Email to me', href: 'mailto:bear817005@gmail.com', icon: EmailIcon }
       ]
       const { output } = setup()
       const [, , bottomRight] = output.props.children;
@@ -56,14 +60,18 @@ describe('components common', () => {
       expect(logoRwd.props.className).toBe('bottom-logo-rwd')
       expect(logoRwd.props.children.type).toBe('img')
       expect(logoRwd.props.children.props.src).toBe('logo.png')
-      // check link
+      // check links
       expect(links.props.className).toBe('bottom-link');
       links.props.children.forEach(function checkFilter(link, i) {
         const { children: linkInner } = link.props
+        // check links behavior
+        expect(link.type).toBe(Tooltip)
         expect(link.props.placement).toBe('top')
         expect(link.props.title).toBe(tooltips[i].title)
         expect(linkInner.props.href).toBe(tooltips[i].href)
         expect(linkInner.props.target).toBe('_blank')
+        // check icons
+        expect(linkInner.props.children.type).toBe(tooltips[i].icon)
       })
       // check copyrightRwd
       expect(copyrightRwd.props.className).toBe('bottom-copyright-rwd')
