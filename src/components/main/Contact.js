@@ -17,10 +17,10 @@ import ClickBtn from "../common/ClickBtn";
 import { emailValidator } from "../../helpers/validator";
 import emailjs from "emailjs-com";
 import dayjs from "dayjs";
-import * as utc from "dayjs/plugin/utc";
 import Noty from "../common/Noty";
 import Loading from "../common/Loading";
 
+let utc = require('dayjs/plugin/utc')
 dayjs.extend(utc);
 
 const Contact = (props) => {
@@ -53,7 +53,7 @@ const Contact = (props) => {
     if (
       lastSubmitTime &&
       dayjs(currentDateInUTC()).diff(dayjs(lastSubmitTime), "seconds", false) <
-        60
+      60
     ) {
       setNoty((prev) => {
         prev.text = t("input.tooManyTry");

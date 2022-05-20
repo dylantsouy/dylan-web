@@ -22,7 +22,7 @@ const TwoIntro = (props) => {
                 </h2>
 
                 <p>{t("subtitleTop1")}</p>
-                <p>{t("subtitleTop2")}</p>
+                <p>{t("subtitleTop2")}</p>
               </div>
 
               <ul className="list-items pixFadeUp">

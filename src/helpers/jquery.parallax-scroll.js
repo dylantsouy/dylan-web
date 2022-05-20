@@ -1,5 +1,5 @@
 /* eslint-disable eqeqeq */
-import * as $ from "jquery";
+let $ = require('jquery')
 
 $(function () {
   ParallaxScroll.init();
@@ -155,7 +155,7 @@ var ParallaxScroll = {
               if (prev == undefined) prev = defaultProp;
               var next =
                 (to - defaultProp) *
-                  ((scrollCurrent - scrollFrom) / (scrollTo - scrollFrom)) +
+                ((scrollCurrent - scrollFrom) / (scrollTo - scrollFrom)) +
                 defaultProp;
               var val = prev + (next - prev) / smoothness;
               if (easing && currentTime > 0 && currentTime <= totalTime) {
@@ -189,11 +189,11 @@ var ParallaxScroll = {
             $parent.attr(
               "style",
               "perspective:" +
-                perspective +
-                "px; -webkit-perspective:" +
-                perspective +
-                "px; " +
-                $parent.data("style")
+              perspective +
+              "px; -webkit-perspective:" +
+              perspective +
+              "px; " +
+              $parent.data("style")
             );
           }
           if (properties["scaleX"] == undefined) properties["scaleX"] = 1;
@@ -233,11 +233,11 @@ var ParallaxScroll = {
           $el.attr(
             "style",
             "transform:" +
-              cssTransform +
-              " -webkit-transform:" +
-              cssTransform +
-              " " +
-              style
+            cssTransform +
+            " -webkit-transform:" +
+            cssTransform +
+            " " +
+            style
           );
         }
       }, this)

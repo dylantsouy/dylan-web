@@ -25,7 +25,6 @@ const setup = (children) => {
 
 describe('components common', () => {
   describe('Common', () => {
-
     it("renders with correct", () => {
       let { output } = setup('test')
       expect(output.type).toBe(React.Fragment)
