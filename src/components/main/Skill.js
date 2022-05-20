@@ -35,7 +35,7 @@ const Skill = () => {
             </div>
           </div>
           <div className="skill-area">
-            <div className="skill-name">English Ability</div>
+            <div className="skill-name">CI / CD & Deploy</div>
             <div className="skill-bar-outer">
               <div className="skill-bar-value4"></div>
             </div>

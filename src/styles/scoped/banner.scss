@@ -278,6 +278,8 @@
         font-size: 12px !important;
       }
       .btn-area {
+        display: flex;
+        justify-content: center;
         .click-btn {
           font-size: 12px !important;
           width: 80px !important;

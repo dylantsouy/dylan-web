@@ -26,10 +26,10 @@
             background-color: $primary_bg;
             transition: 1s;
             &.active {
-              width: 99%;
+              width: 90%;
               &::after {
                 font-size: 14px;
-                content: "99%";
+                content: "90%";
                 position: absolute;
                 right: -15px;
                 top: -25px;
@@ -80,10 +80,10 @@
             background-color: $primary_bg;
             transition: 2s;
             &.active {
-              width: 83%;
+              width: 78%;
               &::after {
                 font-size: 14px;
-                content: "83%";
+                content: "78%";
                 position: absolute;
                 right: -15px;
                 top: -25px;

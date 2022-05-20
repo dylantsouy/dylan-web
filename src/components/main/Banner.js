@@ -35,9 +35,9 @@ const Banner = (props) => {
               width="180px"
               height="30px"
               type="secBtn"
-              text={t("contact")}
+              text={t("git")}
               fontSize="20px"
-              onClick={() => scrollTo(0, 600, `.contact`)}
+              onClick={() => window.open('https://github.com/dylantsouy/dylan-web')}
             />
           </div>
         </div>
