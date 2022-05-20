@@ -1,35 +1,47 @@
 import React from "react";
 import Overlay from "./Overlay";
-import { render, cleanup, screen } from "@testing-library/react";
-import renderer from "react-test-renderer";
+import { render, cleanup } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
+import { createRenderer } from "react-test-renderer/shallow";
 
 afterEach(cleanup);
 
-const props = Object.assign({
-  color: 'black',
-  clickHandler: jest.fn(),
-})
+const setup = (color) => {
+  const props = Object.assign({
+    color,
+    clickHandler: jest.fn(),
+  })
+  const renderer = createRenderer()
+  renderer.render(<Overlay {...props} />)
+  const output = renderer.getRenderOutput()
+
+  return {
+    props: props,
+    output: output
+  }
+}
 
 describe('components common', () => {
   describe('Overlay', () => {
+
     it("renders with correct", () => {
-      render(<Overlay {...props} />);
-      const testEl = screen.getByTestId("overlay");
-      expect(testEl).toBeInTheDocument();
-      expect(testEl).toHaveClass("overlay");
+      const { output } = setup('black')
+      expect(output.type).toBe('div')
+      expect(output.props.className).toBe('overlay')
     });
 
-    it("should onClick working correct", () => {
-      render(<Overlay {...props} />);
-      const testEl = screen.getByTestId("overlay");
-      userEvent.click(testEl);
+    it("should click event is working correctly", () => {
+      const { props } = setup()
+      const { container } = render(<Overlay {...props} />)
+      const overlay = container.querySelector('.overlayWithoutColor')
+      expect(overlay).toHaveClass('overlayWithoutColor')
+      userEvent.click(overlay)
       expect(props.clickHandler).toBeCalled()
     });
 
     it("matches snapshot", () => {
-      const tree = renderer.create(<Overlay {...props} />).toJSON();
-      expect(tree).toMatchSnapshot();
+      const { output } = setup('black')
+      expect(output).toMatchSnapshot();
     });
   })
 })

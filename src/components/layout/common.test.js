@@ -1,31 +1,29 @@
 import React from "react";
-import Loading from "./Loading";
+import Common from "./Common";
 import { cleanup } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 import { createRenderer } from "react-test-renderer/shallow";
 
 afterEach(cleanup);
 
-const setup = () => {
+const setup = (children) => {
+  const props = Object.assign({
+    clickHandler: jest.fn(),
+  })
   const renderer = createRenderer()
-  renderer.render(<Loading color="white" />)
+  renderer.render(<Common {...props} >{children}</Common>)
   const output = renderer.getRenderOutput()
 
   return {
+    props: props,
     output: output
   }
 }
 
-
 describe('components common', () => {
-  describe('Loading', () => {
+  describe('Common', () => {
+
     it("renders with correct", () => {
-      const { output } = setup()
-      expect(output.type).toBe('div');
-      expect(output.props.className).toBe('loading-outer')
-      const { children } = output.props
-      expect(children.type).toBe('div');
-      // check props show correctly
-      expect(children.props.className).toBe('loading white')
     });
 
     it("matches snapshot", () => {

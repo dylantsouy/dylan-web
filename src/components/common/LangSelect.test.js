@@ -1,7 +1,9 @@
 import React from "react";
 import LangSelect from "./LangSelect";
+import MenuItem from "@mui/material/MenuItem";
+import Select from "@mui/material/Select";
+import { IconButton } from "@mui/material";
 import { cleanup } from "@testing-library/react";
-import renderer from "react-test-renderer";
 import { createRenderer } from 'react-test-renderer/shallow';
 
 const setup = () => {
@@ -26,31 +28,34 @@ describe('components common', () => {
 
     it("should render langBtn and default flag", () => {
       const { output } = setup()
-      // should langBtn render correct
+      // should langBtn render correctly
       const [langBtn] = output.props.children
+      expect(langBtn.type).toBe(IconButton)
       expect(langBtn.props.className).toBe('langBtn')
-      // should flagIcon render correct
+      // should flagIcon render correctly
       const flagIcon = langBtn.props.children
       expect(flagIcon.type).toBe('span')
       expect(flagIcon.props.className).toBe('flag-icon flag-icon-tw')
     });
 
-    it("should render LangMenu correct", () => {
+    it("should render LangMenu correctly", () => {
       const langOptions = ['us', 'tw']
       const { output } = setup()
       const [, langMenu] = output.props.children;
+      expect(langMenu.type).toBe(Select)
       expect(langMenu.props.defaultValue).toBe('tw')
-      // should options render correct
+      // should options render correctly
       expect(langMenu.props.children.length).toBe(2)
       langMenu.props.children.forEach(function checkOptions(option, i) {
+        expect(option.type).toBe(MenuItem)
         expect(option.key).toBe(langOptions[i])
         expect(option.props.value).toBe(langOptions[i])
       });
     });
 
     it("matches snapshot", () => {
-      const tree = renderer.create(<LangSelect />).toJSON();
-      expect(tree).toMatchSnapshot();
+      const { output } = setup()
+      expect(output).toMatchSnapshot();
     });
   })
 })

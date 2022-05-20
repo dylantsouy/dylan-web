@@ -1,7 +1,6 @@
 import React from "react";
 import Bottom from "./Bottom";
 import { cleanup } from "@testing-library/react";
-import renderer from "react-test-renderer";
 import { createRenderer } from 'react-test-renderer/shallow';
 
 const setup = () => {
@@ -18,13 +17,13 @@ afterEach(cleanup);
 
 describe('components common', () => {
   describe('Bottom', () => {
-    it("renders with correct", () => {
+    it("renders with correctly", () => {
       const { output } = setup()
       expect(output.type).toBe('div')
       expect(output.props.className).toBe('bottom')
     });
 
-    it("should render bottom-logo correct", () => {
+    it("should render bottom-logo correctly", () => {
       const { output } = setup()
       const [bottomLogo] = output.props.children
       expect(bottomLogo.props.className).toBe('bottom-logo')
@@ -34,15 +33,14 @@ describe('components common', () => {
       expect(logo.props.src).toBe('logo.png')
     });
 
-    it("should render bottom-copyright correct", () => {
+    it("should render bottom-copyright correctly", () => {
       const { output } = setup()
       const [, bottomCopyright] = output.props.children;
       expect(bottomCopyright.props.className).toBe('bottom-copyright')
       expect(bottomCopyright.props.children).toBe('版權所有 © 2021 鄒富顏 版權所有。')
     });
 
-
-    it("should render bottom-right correct", () => {
+    it("should render bottom-right correctly", () => {
       const tooltips = [
         { title: 'Github', href: 'https://github.com/dylantsouy' },
         { title: 'Facebook', href: 'https://www.facebook.com/fu.y.zou' },
@@ -73,8 +71,8 @@ describe('components common', () => {
 
     });
     it("matches snapshot", () => {
-      const tree = renderer.create(<Bottom />).toJSON();
-      expect(tree).toMatchSnapshot();
+      const { output } = setup()
+      expect(output).toMatchSnapshot();
     });
   })
 })

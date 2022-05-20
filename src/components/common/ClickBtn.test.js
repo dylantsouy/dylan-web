@@ -1,21 +1,32 @@
 import React from "react";
 import ClickBtn from "./ClickBtn";
 import { render, cleanup, screen } from "@testing-library/react";
-import renderer from "react-test-renderer";
 import userEvent from "@testing-library/user-event";
+import { createRenderer } from "react-test-renderer/shallow";
 
 afterEach(cleanup);
 
-const props = Object.assign({
-    width: "100px",
-    height: "100px",
-    type: "type",
-    text: "test",
-    onClick: jest.fn(),
-})
+const setup = () => {
+    const props = Object.assign({
+        width: "100px",
+        height: "100px",
+        type: "type",
+        text: "test",
+        onClick: jest.fn(),
+    })
+    const renderer = createRenderer()
+    renderer.render(<ClickBtn {...props} disabled={true} />)
+    const output = renderer.getRenderOutput()
+
+    return {
+        props: props,
+        output: output
+    }
+}
 
 describe('components common', () => {
     describe('ClickBtn', () => {
+        const { props } = setup();
         it("renders with correct", () => {
             render(<ClickBtn {...props} disabled={true} />);
             const testEl = screen.getByText("test");
@@ -39,8 +50,8 @@ describe('components common', () => {
         });
 
         it("matches snapshot", () => {
-            const tree = renderer.create(<ClickBtn {...props} disabled={true} />).toJSON();
-            expect(tree).toMatchSnapshot();
+            const { output } = setup();
+            expect(output).toMatchSnapshot();
         });
 
     })
