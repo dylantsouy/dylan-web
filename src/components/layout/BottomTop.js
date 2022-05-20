@@ -40,7 +40,6 @@ const BottomTop = () => {
           <div className="right-area">
             <ClickBtn
               width="180px"
-              height="30px"
               type="secBtn"
               text={t("goTop")}
               fontSize="20px"

@@ -1,11 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useReducer } from "react";
 import { useTranslation } from "../../langs/useTranslation";
 import * as localforage from "localforage";
-import mapLg from "../../assets/images/map_lg.png";
-import mapXl from "../../assets/images/map_xl.png";
-import mapMd from "../../assets/images/map_md.png";
-import mapSm from "../../assets/images/map_sm.png";
-import mapXs from "../../assets/images/map_xs.png";
+import { mapMaps } from '../../helpers/mapSize'
 import FormControl from "@mui/material/FormControl";
 import FormHelperText from "@mui/material/FormHelperText";
 import TextField from "@mui/material/TextField";
@@ -19,42 +15,41 @@ import emailjs from "emailjs-com";
 import dayjs from "dayjs";
 import Noty from "../common/Noty";
 import Loading from "../common/Loading";
-
+import { ContactReducer } from "../../reducers/ContactReducer";
 let utc = require('dayjs/plugin/utc')
 dayjs.extend(utc);
 
-const Contact = (props) => {
-  emailjs.init(process.env.REACT_APP_CONTACT_USER_ID);
-  const service_id = process.env.REACT_APP_CONTACT_SERVICE_ID;
-  const template_id = process.env.REACT_APP_CONTACT_TEMPLATE_ID;
-  const user_id = process.env.REACT_APP_CONTACT_USER_ID;
-  const currentDateInUTC = () => dayjs.utc().format("YYYY-MM-DD HH:mm:ss");
+const Contact = () => {
   const { t } = useTranslation("contact");
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [emailFormatError, setEmailFormatError] = useState(false);
-  const [phone, setPhone] = useState("");
-  const [content, setContent] = useState("");
-  const [check, setCheck] = useState(false);
+  const { REACT_APP_CONTACT_USER_ID, REACT_APP_CONTACT_SERVICE_ID, REACT_APP_CONTACT_TEMPLATE_ID, } = process.env;
+  emailjs.init(REACT_APP_CONTACT_USER_ID);
+  const service_id = REACT_APP_CONTACT_SERVICE_ID;
+  const template_id = REACT_APP_CONTACT_TEMPLATE_ID;
+  const user_id = REACT_APP_CONTACT_USER_ID;
+  const currentDateInUTC = () => dayjs.utc().format("YYYY-MM-DD HH:mm:ss");
   const [notyOpen, setNotyOpen] = useState(false);
-  const [btnDisabled, setBtnDisabled] = useState(false);
   const [noty, setNoty] = useState({
     type: "success",
     text: "",
   });
+  const [contactVariables, dispatch] = useReducer(ContactReducer, {
+    name: "",
+    email: "",
+    emailFormatError: false,
+    phone: "",
+    content: "",
+    check: false,
+    btnDisabled: false
+  });
 
   const emailHandler = (e) => {
-    setEmailFormatError(false);
-    setEmail(e);
+    dispatch({ type: "TYPE_EMAIL", payload: { value: e } });
   };
 
   const submit = async () => {
+    const { name, email, phone, content } = contactVariables
     const lastSubmitTime = await localforage.getItem("lastSubmitTime");
-    if (
-      lastSubmitTime &&
-      dayjs(currentDateInUTC()).diff(dayjs(lastSubmitTime), "seconds", false) <
-      60
-    ) {
+    if (lastSubmitTime && dayjs(currentDateInUTC()).diff(dayjs(lastSubmitTime), "seconds", false) < 60) {
       setNoty((prev) => {
         prev.text = t("input.tooManyTry");
         prev.type = "error";
@@ -63,26 +58,15 @@ const Contact = (props) => {
       setNotyOpen(true);
       return;
     }
-    setCheck(true);
-    if (!name) {
-      setCheck(true);
-      return;
-    }
-    if (!email) {
-      setCheck(true);
-      return;
-    }
-    if (!content) {
-      setCheck(true);
+    if (!name || !email || !content) {
+      dispatch({ type: "CHECK_TRUE" });
       return;
     }
     if (emailValidator().test(email) === false) {
-      setEmailFormatError(true);
+      dispatch({ type: "EMAIL_ERROR" });
       return;
     }
-    setCheck(false);
-    setEmailFormatError(false);
-    setBtnDisabled(true);
+    dispatch({ type: "BEFORE_SEND_EMAIL" });
     emailjs
       .send(
         service_id,
@@ -97,9 +81,8 @@ const Contact = (props) => {
         user_id
       )
       .then(
-        async (response) => {
-          console.log(response);
-          setBtnDisabled(false);
+        async () => {
+          dispatch({ type: "ENABLE_BUTTON" });
           setNoty((prev) => {
             prev.text = t("input.success");
             prev.type = "success";
@@ -115,7 +98,7 @@ const Contact = (props) => {
             return prev;
           });
           setNotyOpen(true);
-          setBtnDisabled(false);
+          dispatch({ type: "ENABLE_BUTTON" });
         }
       );
   };
@@ -134,11 +117,9 @@ const Contact = (props) => {
       <div className="subtitle">{t("subtitle")}</div>
       <div className="main-area">
         <div className="map">
-          <img src={mapXl} alt="map" className="map-xl" />
-          <img src={mapLg} alt="map" className="map-lg" />
-          <img src={mapMd} alt="map" className="map-md" />
-          <img src={mapSm} alt="map" className="map-sm" />
-          <img src={mapXs} alt="map" className="map-xs" />
+          {mapMaps.map(e => (
+            <img src={e.map} alt={e.name} className={e.name} key={e.name} />
+          ))}
         </div>
         <div className="contact-bottom">
           <div className="contact-content">
@@ -176,15 +157,15 @@ const Contact = (props) => {
             <div>
               <div className="name-phone">
                 <div className="name">
-                  <FormControl error={check && !name} variant="standard">
+                  <FormControl error={contactVariables.check && !contactVariables.name} variant="standard">
                     <TextField
                       required
                       label={t("input.name")}
                       placeholder={t("input.placeholder")}
-                      value={name}
-                      onChange={(e) => setName(e.target.value)}
+                      value={contactVariables.name}
+                      onChange={(e) => dispatch({ type: "SET_NAME", payload: { value: e.target.value } })}
                     />
-                    {check && !name && (
+                    {contactVariables.check && !contactVariables.name && (
                       <FormHelperText id="component-error-text">
                         {t("input.noName")}
                       </FormHelperText>
@@ -196,31 +177,31 @@ const Contact = (props) => {
                     <TextField
                       label={t("input.phone")}
                       placeholder={t("input.placeholder")}
-                      value={phone}
+                      value={contactVariables.phone}
                       type="number"
-                      onChange={(e) => setPhone(e.target.value)}
+                      onChange={(e) => dispatch({ type: "SET_PHONE", payload: { value: e.target.value } })}
                     />
                   </FormControl>
                 </div>
               </div>
               <div className="email">
                 <FormControl
-                  error={(check && !email) || emailFormatError}
+                  error={(contactVariables.check && !contactVariables.email) || contactVariables.emailFormatError}
                   variant="standard"
                 >
                   <TextField
                     required
                     label={t("input.email")}
                     placeholder={t("input.placeholder")}
-                    value={email}
+                    value={contactVariables.email}
                     onChange={(e) => emailHandler(e.target.value)}
                   />
-                  {check && !email && (
+                  {contactVariables.check && !contactVariables.email && (
                     <FormHelperText id="component-error-text">
                       {t("input.noEmail")}
                     </FormHelperText>
                   )}
-                  {emailFormatError && (
+                  {contactVariables.emailFormatError && (
                     <FormHelperText id="component-error-text">
                       {t("input.emailErrorFormat")}
                     </FormHelperText>
@@ -228,15 +209,15 @@ const Contact = (props) => {
                 </FormControl>
               </div>
               <div className="content">
-                <FormControl error={check && !content} variant="standard">
+                <FormControl error={contactVariables.check && !contactVariables.content} variant="standard">
                   <TextareaAutosize
                     required
                     minRows={10}
-                    value={content}
+                    value={contactVariables.content}
                     placeholder={t("input.content")}
-                    onChange={(e) => setContent(e.target.value)}
+                    onChange={(e) => dispatch({ type: "SET_CONTENT", payload: { value: e.target.value } })}
                   />
-                  {check && !content && (
+                  {contactVariables.check && !contactVariables.content && (
                     <FormHelperText id="component-error-text">
                       {t("input.noContent")}
                     </FormHelperText>
@@ -245,10 +226,10 @@ const Contact = (props) => {
               </div>
               <div className="btn">
                 <ClickBtn
-                  disabled={btnDisabled}
+                  disabled={contactVariables.btnDisabled}
                   type="primaryBtn"
                   text={
-                    btnDisabled ? (
+                    contactVariables.btnDisabled ? (
                       <Loading color="white" />
                     ) : (
                       t("input.sendMail")

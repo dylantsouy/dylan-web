@@ -6,7 +6,7 @@ import { ReactComponent as Line } from "../../assets/images/dashLine.svg";
 import { ReactComponent as GreenBall } from "../../assets/images/greenBall.svg";
 import { ReactComponent as OrangeBall } from "../../assets/images/orangeBall.svg";
 
-const TwoIntro = (props) => {
+const TwoIntro = () => {
   const { t } = useTranslation("twoIntro");
   return (
     <section className="twoIntro-outer">

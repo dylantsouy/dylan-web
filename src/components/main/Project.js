@@ -73,9 +73,9 @@ const Project = () => {
           className="project-swiper"
         >
           {projectSet.length > 0 &&
-            projectSet.map((e, index) => (
+            projectSet.map((e) => (
               <SwiperSlide
-                key={index}
+                key={e.text}
                 className="project-item"
                 onClick={() => goRouter(e.link)}
               >

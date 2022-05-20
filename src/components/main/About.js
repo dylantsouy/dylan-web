@@ -3,9 +3,14 @@ import { useTranslation } from "../../langs/useTranslation";
 import aboutPic from "../../assets/images/aboutPic.png";
 import cv from "../../assets/files/FuYen, Tsou - CV (Nov 2021).pdf";
 
-const About = (props) => {
+const About = () => {
   const { t } = useTranslation("about");
-
+  const info = [
+    { label: t("birthday"), value: '23th Nov 1993' },
+    { label: t("age"), value: '28 Yr' },
+    { label: t("email"), value: 'bear817005@gmail.com' },
+    { label: t("phone"), value: '0986162360' },
+  ]
   return (
     <div className="about section">
       <div className="title">
@@ -26,26 +31,16 @@ const About = (props) => {
           </div>
           <div className="about-intro">{t("intro")}</div>
           <div className="about-self-info">
-            <div className="info">
-              <div className="info-label">{t("birthday")}</div>
-              <div className="info-value">23th Nov 1993</div>
-            </div>
-            <div className="info">
-              <div className="info-label">{t("age")}</div>
-              <div className="info-value">28 Yr</div>
-            </div>
-            <div className="info">
-              <div className="info-label">{t("email")}</div>
-              <div className="info-value">bear817005@gmail.com</div>
-            </div>
-            <div className="info">
-              <div className="info-label">{t("phone")}</div>
-              <div className="info-value">0986162360</div>
-            </div>
+            {info.map(e => (
+              <div className="info" key={e.label}>
+                <div className="info-label">{e.label}</div>
+                <div className="info-value">{e.value}</div>
+              </div>
+            ))}
           </div>
-           <a className="primaryBtn click-btn about-downloadCV" href={cv} download target="_blank" rel="noreferrer">
+          <a className="primaryBtn click-btn about-downloadCV" href={cv} download target="_blank" rel="noreferrer">
             {t("downloadCV")}
-          </a> 
+          </a>
         </div>
       </div>
     </div>

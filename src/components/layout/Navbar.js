@@ -20,6 +20,13 @@ import { scrollTo } from "../../helpers/router";
 const Navbar = () => {
   const { t } = useTranslation("common");
   const [showDrawer, setShowDrawer] = useState(false);
+  const navItems = [
+    { title: "home", router: "#home", icon: <HomeIcon />, active: true },
+    { title: "about", router: "#about", icon: <AssignmentIndIcon /> },
+    { title: "skill", router: "#skill", icon: <BuildIcon /> },
+    { title: "project", router: "#project", icon: <BusinessCenterIcon /> },
+    { title: "contact", router: "#contact", icon: <ContactMailIcon /> },
+  ];
 
   const clickHandler = (title) => {
     scrollTo(0, 600, `.${title}`);
@@ -31,7 +38,7 @@ const Navbar = () => {
       onClick={() => setShowDrawer(false)}
       onKeyDown={() => setShowDrawer(false)}
     >
-      <img src={logoW} alt="logo" className="navbar-rwd-icon"/>
+      <img src={logoW} alt="logo" className="navbar-rwd-icon" />
       <List>
         {navItems.map((e) => (
           <ListItem button key={e.title} onClick={() => clickHandler(e.title)}>
@@ -42,13 +49,6 @@ const Navbar = () => {
       </List>
     </Box>
   );
-  const navItems = [
-    { title: "home", router: "#home", icon: <HomeIcon />, active: true },
-    { title: "about", router: "#about", icon: <AssignmentIndIcon /> },
-    { title: "skill", router: "#skill", icon: <BuildIcon /> },
-    { title: "project", router: "#project", icon: <BusinessCenterIcon /> },
-    { title: "contact", router: "#contact", icon: <ContactMailIcon /> },
-  ];
 
   return (
     <div className="navbar">
@@ -60,9 +60,7 @@ const Navbar = () => {
           {navItems.map((e) => (
             <div
               key={e.title}
-              className={`navbar-item ${e.title}-nav ${
-                e.active ? "active" : ""
-              }`}
+              className={`navbar-item ${e.title}-nav ${e.active ? "active" : ""}`}
               onClick={() => clickHandler(e.title)}
             >
               {t(`${e.title}`)}

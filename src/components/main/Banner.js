@@ -7,7 +7,7 @@ import ReactTypingEffect from "react-typing-effect";
 import ClickBtn from "../common/ClickBtn";
 import { scrollTo } from "../../helpers/router";
 
-const Banner = (props) => {
+const Banner = () => {
   const { t } = useTranslation("banner");
   return (
     <div className="banner-outer">
@@ -24,16 +24,12 @@ const Banner = (props) => {
           <div className="intro">{t("intro")}</div>
           <div className="btn-area">
             <ClickBtn
-              width="180px"
-              height="30px"
               type="primaryBtn"
               text={t("myWork")}
               fontSize="20px"
               onClick={() => scrollTo(0, 600, `.project`)}
             />
             <ClickBtn
-              width="180px"
-              height="30px"
               type="secBtn"
               text={t("git")}
               fontSize="20px"

@@ -2,6 +2,7 @@
 import React from "react";
 import { Route } from "react-router-dom";
 import Common from "../components/layout/Common";
+import PropTypes from 'prop-types'
 
 const PublicRoute = ({ component: Component, ...props }) => {
 
@@ -17,4 +18,9 @@ const PublicRoute = ({ component: Component, ...props }) => {
   );
 };
 
+PublicRoute.propTypes = {
+  component: PropTypes.elementType.isRequired,
+  exact: PropTypes.bool,
+  path: PropTypes.string.isRequired,
+}
 export default PublicRoute;
