@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useMemo } from "react";
 import MenuItem from "@mui/material/MenuItem";
 import Select from "@mui/material/Select";
 import { IconButton } from "@mui/material";
@@ -21,6 +21,14 @@ const LangSelect = () => {
     userLanguageChange(event.target.value);
   };
 
+  const langOptions = useMemo(() => {
+    return Object.entries(languageOptions).map(([id, name]) => (
+      <MenuItem key={id} value={id} name={id}>
+        {name}
+      </MenuItem>
+    ))
+  }, [])
+
   const renderLangMenu = (
     <Select
       open={open}
@@ -31,11 +39,7 @@ const LangSelect = () => {
       onChange={handleLangChange}
       MenuProps={{ disableScrollLock: true }}
     >
-      {Object.entries(languageOptions).map(([id, name]) => (
-        <MenuItem key={id} value={id} name={id}>
-          {name}
-        </MenuItem>
-      ))}
+     {langOptions}
     </Select>
   );
 
