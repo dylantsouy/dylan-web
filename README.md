@@ -1,5 +1,5 @@
 ﻿# Dylan-wei-web
-(https://dylantsouy.github.io/dylan-web/) \
+https://dylantsouy.github.io/dylan-web/ \
 This is the web for my portofolio, If you need more information, Please feel free to contact me at any time.\
 \
 Author: 1. Dylan Tsou : (https://github.com/dylantsouy) 
