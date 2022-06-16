@@ -19,8 +19,8 @@ const PublicRoute = ({ component: Component, ...props }) => {
 };
 
 PublicRoute.propTypes = {
-  component: PropTypes.elementType.isRequired,
+  component: PropTypes.elementType,
   exact: PropTypes.bool,
-  path: PropTypes.string.isRequired,
+  path: PropTypes.string,
 }
 export default PublicRoute;

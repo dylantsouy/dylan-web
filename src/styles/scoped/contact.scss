@@ -12,39 +12,11 @@
     border-radius: $border_radius;
     .map {
       width: 100%;
-      .map-xl {
+      img{
         vertical-align: top;
         width: 100%;
         height: 100%;
         border-radius: $border_radius $border_radius 0 0;
-      }
-      .map-lg {
-        vertical-align: top;
-        width: 100%;
-        height: 100%;
-        border-radius: $border_radius $border_radius 0 0;
-        display: none;
-      }
-      .map-md {
-        vertical-align: top;
-        width: 100%;
-        height: 100%;
-        border-radius: $border_radius $border_radius 0 0;
-        display: none;
-      }
-      .map-sm {
-        vertical-align: top;
-        width: 100%;
-        height: 100%;
-        border-radius: $border_radius $border_radius 0 0;
-        display: none;
-      }
-      .map-xs {
-        vertical-align: top;
-        width: 100%;
-        height: 100%;
-        border-radius: $border_radius $border_radius 0 0;
-        display: none;
       }
     }
     .contact-bottom {
@@ -193,20 +165,6 @@
   }
 }
 
-@media (max-width: 1300px) {
-  .contact {
-    .main-area {
-      .map {
-        .map-xl {
-          display: none;
-        }
-        .map-lg {
-          display: block;
-        }
-      }
-    }
-  }
-}
 @media (max-width: 1000px) {
   .contact {
     .main-area {
@@ -224,14 +182,6 @@
 @media (max-width: 900px) {
   .contact {
     .main-area {
-      .map {
-        .map-lg {
-          display: none;
-        }
-        .map-md {
-          display: block;
-        }
-      }
       .contact-bottom {
         flex-direction: column;
         align-items: center;
@@ -256,14 +206,6 @@
 @media (max-width: 700px) {
   .contact {
     .main-area {
-      .map {
-        .map-md {
-          display: none;
-        }
-        .map-sm {
-          display: block;
-        }
-      }
       .contact-bottom {
         .contact-content{
           .value{
@@ -272,20 +214,6 @@
         }
         .survey{
           width: 90%;
-        }
-      }
-    }
-  }
-}
-@media (max-width: 550px) {
-  .contact {
-    .main-area {
-      .map {
-        .map-sm {
-          display: none;
-        }
-        .map-xs {
-          display: block;
         }
       }
     }
