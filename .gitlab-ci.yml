@@ -16,6 +16,9 @@ build website:
         # - yarn test
         - yarn build
         - echo $APP_VERSION > build/version.html
+    cache:
+        paths:
+            - node_modules/
     artifacts:
         paths:
             - build
@@ -33,7 +36,7 @@ test website:
         - curl http://localhost:3000 | grep "Dylan's Website"
 
 .deploy:
-    image: 
+    image:
         name: amazon/aws-cli:2.4.11
         entrypoint: [""]
     rules:
