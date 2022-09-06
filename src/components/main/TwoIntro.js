@@ -31,6 +31,7 @@ const TwoIntro = () => {
               </ul>
             </div>
           </div>
+          
           <div className="twoIntro-right">
             <div className="twoIntro-image-wrapper style-one">
               <div className="image-one pixFadeUp">
