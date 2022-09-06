@@ -20,7 +20,6 @@ const TwoIntro = () => {
                   <br />
                   <span>{t("titleTop2")}</span>
                 </h2>
-
                 <p>{t("subtitleTop1")}</p>
                 <p>{t("subtitleTop2")}</p>
               </div>
