@@ -20,11 +20,9 @@ const TwoIntro = () => {
                   <br />
                   <span>{t("titleTop2")}</span>
                 </h2>
-
                 <p>{t("subtitleTop1")}</p>
                 <p>{t("subtitleTop2")}</p>
               </div>
-
               <ul className="list-items pixFadeUp">
                 <li>{t("liTop1")}</li>
                 <li>{t("liTop2")}</li>
@@ -33,7 +31,7 @@ const TwoIntro = () => {
               </ul>
             </div>
           </div>
-
+          
           <div className="twoIntro-right">
             <div className="twoIntro-image-wrapper style-one">
               <div className="image-one pixFadeUp">

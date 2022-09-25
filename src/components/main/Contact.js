@@ -106,7 +106,7 @@ const Contact = () => {
                         currentDateInUTC()
                     );
                 },
-                (error) => {
+                () => {
                     setNoty((prev) => {
                         prev.text = t("input.error");
                         prev.type = "error";
