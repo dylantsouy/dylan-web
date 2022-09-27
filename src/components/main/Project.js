@@ -3,7 +3,7 @@ import { useTranslation } from "../../langs/useTranslation";
 import project1 from "../../assets/images/DylanEnglish.gif";
 import project2 from "../../assets/images/gif.gif";
 import project3 from "../../assets/images/movie.gif";
-import project4 from "../../assets/images/drawList.png";
+import project4 from "../../assets/images/draw.png";
 import { Swiper, SwiperSlide } from "swiper/react/swiper-react.js";
 
 // Import Swiper styles
