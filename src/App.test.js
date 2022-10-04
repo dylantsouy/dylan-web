@@ -2,9 +2,9 @@ import React from "react";
 import { cleanup } from "@testing-library/react";
 import { createRenderer } from "react-test-renderer/shallow";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
-import PublicRoute from "./hoc/PublicRoute";
-import App from "./App";
-import Main from "./containers/Main";
+import PublicRoute from "hoc/PublicRoute";
+import App from "App";
+import Main from "containers/Main";
 
 afterEach(cleanup);
 

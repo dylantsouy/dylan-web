@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./styles/all.scss";
-import App from "./App";
-import { LOCALFORAGE_INITIATE } from "./initiates/initiate";
-import * as serviceWorker from "./serviceWorker";
+import "styles/all.scss";
+import App from "App";
+import { LOCALFORAGE_INITIATE } from "initiates/initiate";
+import * as serviceWorker from "serviceWorker";
 
 // eslint-disable-next-line no-unused-vars
 const $ = window.$;
