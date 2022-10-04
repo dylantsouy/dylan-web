@@ -2,8 +2,8 @@ import React, { useState, useContext, useMemo } from "react";
 import MenuItem from "@mui/material/MenuItem";
 import Select from "@mui/material/Select";
 import { IconButton } from "@mui/material";
-import { LanguageContext } from "../../langs/LanguageContext";
-import { languageOptions } from "../../langs/index";
+import { LanguageContext } from "langs/LanguageContext";
+import { languageOptions } from "langs/index";
 
 const LangSelect = () => {
   const { userLanguage, userLanguageChange } = useContext(LanguageContext);

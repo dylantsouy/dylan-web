@@ -1,7 +1,7 @@
 import React from "react";
-import { useTranslation } from "../../langs/useTranslation";
-import aboutPic from "../../assets/images/aboutPic.png";
-import cv from "../../assets/files/FuYen, Tsou - CV (Nov 2021).pdf";
+import { useTranslation } from "langs/useTranslation";
+import aboutPic from "assets/images/aboutPic.png";
+import cv from "assets/files/FuYen, Tsou - CV (Nov 2021).pdf";
 
 const About = () => {
   const { t } = useTranslation("about");

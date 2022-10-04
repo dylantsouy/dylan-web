@@ -1,11 +1,11 @@
 import React from "react";
-import { useTranslation } from "../../langs/useTranslation";
-import { ReactComponent as SelfPhoto } from "../../assets/images/self.svg";
-import mainBall from "../../assets/images/mainBall.svg";
-import bannerShape from "../../assets/images/banner-shape.png";
+import { useTranslation } from "langs/useTranslation";
+import { ReactComponent as SelfPhoto } from "assets/images/self.svg";
+import mainBall from "assets/images/mainBall.svg";
+import bannerShape from "assets/images/banner-shape.png";
 import ReactTypingEffect from "react-typing-effect";
 import ClickBtn from "../common/ClickBtn";
-import { scrollTo } from "../../helpers/router";
+import { scrollTo } from "helpers/router";
 
 const Banner = () => {
   const { t } = useTranslation("banner");

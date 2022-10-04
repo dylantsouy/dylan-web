@@ -2,12 +2,12 @@ import React from "react";
 import { cleanup } from "@testing-library/react";
 import { createRenderer } from "react-test-renderer/shallow";
 import Main from "./Main";
-import About from "../components/main/About";
-import Banner from "../components/main/Banner";
-import Skill from "../components/main/Skill";
-import Project from "../components/main/Project";
-import TwoIntro from "../components/main/TwoIntro";
-import Contact from "../components/main/Contact";
+import About from "components/main/About";
+import Banner from "components/main/Banner";
+import Skill from "components/main/Skill";
+import Project from "components/main/Project";
+import TwoIntro from "components/main/TwoIntro";
+import Contact from "components/main/Contact";
 
 afterEach(cleanup);
 

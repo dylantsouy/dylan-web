@@ -1,10 +1,10 @@
 import React from "react";
-import { useTranslation } from "../../langs/useTranslation";
-import RwdPic from "../../assets/images/ionic.gif";
-import MoviePic from "../../assets/images/movie.png";
-import { ReactComponent as Line } from "../../assets/images/dashLine.svg";
-import { ReactComponent as GreenBall } from "../../assets/images/greenBall.svg";
-import { ReactComponent as OrangeBall } from "../../assets/images/orangeBall.svg";
+import { useTranslation } from "langs/useTranslation";
+import RwdPic from "assets/images/ionic.gif";
+import MoviePic from "assets/images/movie.png";
+import { ReactComponent as Line } from "assets/images/dashLine.svg";
+import { ReactComponent as GreenBall } from "assets/images/greenBall.svg";
+import { ReactComponent as OrangeBall } from "assets/images/orangeBall.svg";
 
 const TwoIntro = () => {
   const { t } = useTranslation("twoIntro");

@@ -1,7 +1,7 @@
 import React, { useState, useReducer } from "react";
-import { useTranslation } from "../../langs/useTranslation";
+import { useTranslation } from "langs/useTranslation";
 import * as localforage from "localforage";
-import { mapMaps } from "../../helpers/mapSize";
+import { mapMaps } from "helpers/mapSize";
 import FormControl from "@mui/material/FormControl";
 import FormHelperText from "@mui/material/FormHelperText";
 import TextField from "@mui/material/TextField";
@@ -10,13 +10,13 @@ import RoomIcon from "@mui/icons-material/Room";
 import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 import EmailIcon from "@mui/icons-material/Email";
 import ClickBtn from "../common/ClickBtn";
-import { emailValidator } from "../../helpers/validator";
+import { emailValidator } from "helpers/validator";
 import emailjs from "emailjs-com";
 import dayjs from "dayjs";
 import Noty from "../common/Noty";
 import Loading from "../common/Loading";
-import { ContactReducer } from "../../reducers/ContactReducer";
-import mapXs from "../../assets/images/map_xs.png";
+import { ContactReducer } from "reducers/ContactReducer";
+import mapXs from "assets/images/map_xs.png";
 let utc = require("dayjs/plugin/utc");
 dayjs.extend(utc);
 

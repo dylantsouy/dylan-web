@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import logo from "../../assets/images/logo.png";
-import logoW from "../../assets/images/logo.png";
-import { useTranslation } from "../../langs/useTranslation";
+import logo from "assets/images/logo.png";
+import logoW from "assets/images/logo.png";
+import { useTranslation } from "langs/useTranslation";
 import LangSelect from "../common/LangSelect";
 import DehazeIcon from "@mui/icons-material/Dehaze";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
@@ -15,7 +15,7 @@ import AssignmentIndIcon from "@mui/icons-material/AssignmentInd";
 import BuildIcon from "@mui/icons-material/Build";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
-import { scrollTo } from "../../helpers/router";
+import { scrollTo } from "helpers/router";
 
 const Navbar = () => {
   const { t } = useTranslation("common");

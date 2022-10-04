@@ -1,9 +1,9 @@
 import React from "react";
-import { useTranslation } from "../../langs/useTranslation";
-import leftPic from "../../assets/images/left-pic.png";
-import rightPic from "../../assets/images/right-pic.png";
+import { useTranslation } from "langs/useTranslation";
+import leftPic from "assets/images/left-pic.png";
+import rightPic from "assets/images/right-pic.png";
 import ClickBtn from "../common/ClickBtn";
-import { scrollTo } from "../../helpers/router";
+import { scrollTo } from "helpers/router";
 
 const BottomTop = () => {
   const { t } = useTranslation("common");

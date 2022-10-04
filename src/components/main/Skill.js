@@ -1,9 +1,9 @@
 import React from "react";
-import { useTranslation } from "../../langs/useTranslation";
+import { useTranslation } from "langs/useTranslation";
 import Tooltip from "@mui/material/Tooltip";
-import { toolsSet1 } from "../../helpers/skillsImg";
+import { toolsSet1 } from "helpers/skillsImg";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
-import downBg from "../../assets/images/down-bg.png";
+import downBg from "assets/images/down-bg.png";
 
 const Skill = () => {
   const { t } = useTranslation("skill");

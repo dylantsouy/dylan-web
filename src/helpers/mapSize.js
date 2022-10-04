@@ -1,7 +1,7 @@
-import mapLg from "../assets/images/map_lg.png";
-import mapXl from "../assets/images/map_xl.png";
-import mapMd from "../assets/images/map_md.png";
-import mapSm from "../assets/images/map_sm.png";
+import mapLg from "assets/images/map_lg.png";
+import mapXl from "assets/images/map_xl.png";
+import mapMd from "assets/images/map_md.png";
+import mapSm from "assets/images/map_sm.png";
 
 export const mapMaps = [
     { map: mapXl, name: "map-xl",size:1300 },

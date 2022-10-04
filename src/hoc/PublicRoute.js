@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React from "react";
 import { Route } from "react-router-dom";
-import Common from "../components/layout/Common";
+import Common from "components/layout/Common";
 import PropTypes from 'prop-types'
 
 const PublicRoute = ({ component: Component, ...props }) => {
