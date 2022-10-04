@@ -13,6 +13,25 @@ Author: 1. Dylan Tsou : (https://github.com/dylantsouy)
 5. Use emailjs-com to perform email sending
 6. Use jest & test-library to perform unit test
 
+## Import Convention
+
+Example:
+
+    - src
+        - components
+            |_ common
+                |_ Sidebar.tsx
+        - helpers
+            |_someHelpers.ts
+
+Then in the Sidebar.tsx:
+
+    o import { something } from "helpers/someHelpers.ts"
+
+> Don't need to write "../../../" thing 👍
+
+    x import { something } from "../../../helpers/someHelpers.ts"
+    
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
