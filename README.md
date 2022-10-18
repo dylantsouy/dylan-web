@@ -1,20 +1,74 @@
-﻿# Dylan-wei-web
-https://dylantsouy.github.io/dylan-web/ \
-This is the web for my portofolio, If you need more information, Please feel free to contact me at any time.\
-\
-Author: 1. Dylan Tsou : (https://github.com/dylantsouy) 
+﻿<p align="center">
+  <a href="" rel="noopener">
+ <img width=250px height=180px src="https://dylantsouy.github.io/dylan-web/static/media/logo.d72887e1.png" alt="Project logo"></a>
+</p>
 
-## Web built by
+<h3 align="center">Dylan's-website</h3>
+<p align="center">https://dylantsouy.github.io/dylan-web/
+</p>
 
-1. Basically built by React and material UI
-2. Use localforage to save langs
-3. I18 bulit by self without any i18 3rd part Package, use react provider and localforage to complete it
-4. Use swiper for project
-5. Use emailjs-com to perform email sending
-6. Use jest & test-library to perform unit test
+---
 
-## Import Convention
+## 📝 Table of Contents
 
+- [About](#about)
+- [Getting Started](#getting_started)
+- [Deployment](#deployment)
+- [Usage](#usage)
+- [Built Using](#built_using)
+- [Authors](#authors)
+- [Acknowledgments](#acknowledgement)
+
+## 🧐 About <a name = "about"></a>
+
+ This is the web for my portofolio, If you need more information, Please feel free to contact me at any time
+
+## 🏁 Getting Started <a name = "getting_started"></a>
+
+
+
+### Prerequisites
+
+What things you need to install the software and how to install them.
+
+```
+Give examples
+```
+
+### Installing
+
+In the project directory, you can run:
+
+```
+npm i
+```
+
+Install the necessary package for project before start.
+
+```
+npm start
+```
+
+Runs the app in the development mode.
+
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.
+You will also see any lint errors in the console.
+
+## 🔧 Running the tests <a name = "tests"></a>
+
+Tests for this system.
+
+
+```
+npm run test
+```
+
+## 🎈 Usage <a name="usage"></a>
+
+
+```
 Example:
 
     - src
@@ -31,23 +85,26 @@ Then in the Sidebar.tsx:
 > Don't need to write "../../../" thing 👍
 
     x import { something } from "../../../helpers/someHelpers.ts"
+```
     
-## Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🚀 Deployment <a name = "deployment"></a>
 
-## Available Scripts
+Deploy By github page
+https://dylantsouy.github.io/dylan-web/
 
-In the project directory, you can run:
+## ⛏️ Built Using <a name = "built_using"></a>
 
-### `npm i`
+- [React](https://reactjs.org/) - JavaScript library
+- [MUI](https://mui.com/) - UI Framework
+- [NodeJs](https://nodejs.org/en/) - Server Environment
 
-Install the necessary package for project before start.
+## ✍️ Authors <a name = "authors"></a>
 
-### `npm start`
+- [@Dylan Tsou](https://github.com/dylantsouy) 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Hat tip to anyone whose code was used
+- Inspiration
+- References

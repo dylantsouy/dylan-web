@@ -9,7 +9,7 @@ import htmlSetLogo from "assets/images/htmlset.png";
 import mysqlLogo from "assets/images/mysql.png";
 import typescriptLogo from "assets/images/typescript.png";
 import mongoDBLogo from "assets/images/mongodb.png";
-import sketchLogo from "assets/images/sketch.svg";
+import figmaLogo from "assets/images/figma.png";
 import jqueryLogo from "assets/images/jquery.png";
 import laravelLogo from "assets/images/laravel.png";
 import phpLogo from "assets/images/php.png";
@@ -34,6 +34,6 @@ export const toolsSet1 = [
   { src: mongoDBLogo, name: "MongoDB" },
   { src: mysqlLogo, name: "SQL Server" },
   { src: herokuLogo, name: "Heroku" },
-  { src: sketchLogo, name: "Sketch" },
-  { src: materialLogo, name: "Material UI / Ant Design / Bootstrap..." },
+  { src: figmaLogo, name: "Figma" },
+  { src: materialLogo, name: "MUI / Ant Design / Bootstrap..." },
 ];

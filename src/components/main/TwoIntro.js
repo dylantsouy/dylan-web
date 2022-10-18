@@ -28,6 +28,7 @@ const TwoIntro = () => {
                 <li>{t("liTop2")}</li>
                 <li>{t("liTop3")}</li>
                 <li>{t("liTop4")}</li>
+                <li>{t("liTop5")}</li>
               </ul>
             </div>
           </div>
@@ -101,6 +102,10 @@ const TwoIntro = () => {
               <li>
                 <i className="ei ei-icon_mug"></i>
                 {t("liBottom7")}
+              </li>
+              <li>
+                <i className="ei ei-icon_mug"></i>
+                {t("liBottom8")}
               </li>
             </ul>
           </div>

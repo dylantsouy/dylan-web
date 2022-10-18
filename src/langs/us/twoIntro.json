@@ -7,15 +7,16 @@
   "liTop2": "Front-end RWD layout",
   "liTop3": "Back-end API Compose",
   "liTop4": "Connecting various types of APIs",
+  "liTop5": "Build Databases",
   "titleBottom1": "RWD layout design",
   "titleBottom2": "Users can use the web wherever they are",
   "subtitleBottom": "Completed company projects: ",
   "liBottom1": "POS menu management system",
   "liBottom2": "Industrial computer connection web",
-  "liBottom3": "The web included various Chart",
+  "liBottom3": "Electron App",
   "liBottom4": "Company Internal Human Resources System",
   "liBottom5": "News Media Web",
   "liBottom6": "PWA mobile web",
   "liBottom7": "Background management system",
-  "liBottom8": "Web Socket Chat System"
+  "liBottom8": "Situation room system"
 }

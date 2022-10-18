@@ -20,7 +20,7 @@ const Project = () => {
             src: project4,
             text: t("project4"),
             date: "Sep, 2022",
-            link: "https://dylantsouy.github.io/draw-flow-list/#/dashboard/",
+            link: "https://dylantsouy.github.io/draw-flowList/#/dashboard/",
             new: true,
         },
         {
