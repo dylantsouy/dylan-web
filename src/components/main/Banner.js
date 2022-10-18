@@ -31,9 +31,9 @@ const Banner = () => {
             />
             <ClickBtn
               type="secBtn"
-              text={t("git")}
+              text={t("blog")}
               fontSize="20px"
-              onClick={() => window.open('https://github.com/dylantsouy/dylan-web')}
+              onClick={() => window.open('https://medium.com/@bear817005')}
             />
           </div>
         </div>
