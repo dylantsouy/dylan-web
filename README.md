@@ -11,10 +11,12 @@
 
 ## 📝 Table of Contents
 
+
 - [About](#about)
 - [Getting Started](#getting_started)
-- [Deployment](#deployment)
+- [Running the tests](#tests)
 - [Usage](#usage)
+- [Deployment](#deployment)
 - [Built Using](#built_using)
 - [Authors](#authors)
 - [Acknowledgments](#acknowledgement)
@@ -30,10 +32,6 @@
 ### Prerequisites
 
 What things you need to install the software and how to install them.
-
-```
-Give examples
-```
 
 ### Installing
 
