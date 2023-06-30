@@ -1,4 +1,4 @@
-﻿<p align="center">
+﻿﻿<p align="center">
   <a href="" rel="noopener">
  <img width=250px height=180px src="https://dylantsouy.github.io/dylan-web/static/media/logo.d72887e1.png" alt="Project logo"></a>
 </p>
