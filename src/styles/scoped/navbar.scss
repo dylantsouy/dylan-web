@@ -1,0 +1,118 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 0 60px;
+  &.have-color{
+    background-color: $second_bg;
+  }
+  .navbar-left {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    img {
+      width: 55px;
+      height: 38px;
+    }
+  }
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    .navbar-items {
+      display: flex;
+      align-items: center;
+      .navbar-item {
+        text-decoration: none;
+        color: #fff;
+        margin: 0 20px;
+        font-weight: 600;
+        cursor: pointer;
+        &.active {
+          color: $orange_bg;
+          position: relative;
+          &::after {
+            position: absolute;
+            content: "";
+            height: 2px;
+            width: 60%;
+            background-color: $orange_bg;
+            bottom: -2px;
+            right: 20%;
+          }
+        }
+      }
+    }
+    .menuList {
+      top: 0 !important;
+      overflow: initial;
+    }
+    .navbar-rwd-button {
+      display: none;
+    }
+    .langSelect {
+      padding-right: 40px;
+      position: relative;
+      width: 40px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      .MuiOutlinedInput-root {
+        opacity: 0;
+      }
+      .flag-icon {
+        width: 22.5px;
+      }
+    }
+  }
+}
+.MuiMenuItem-root {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center;
+  padding: 10px 0 !important;
+}
+.MuiDrawer-paper {
+  .MuiBox-root {
+    background-color: $second_bg;
+    color: #fff;
+    img {
+      cursor: pointer;
+      width: 38px;
+      height: 28px;
+      margin: 15px 0 0 18px;
+    }
+    svg {
+      color: #fff;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .navbar {
+    padding: 0 0 0 20px;
+    .navbar-left {
+      img {
+        width: 45px;
+        height: 33px;
+      }
+    }
+    .navbar-right {
+      .langSelect {
+        padding-right: 20px;
+      }
+      .navbar-items {
+        display: none;
+      }
+      .navbar-rwd-button {
+        display: flex;
+        color: $dark_text;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}

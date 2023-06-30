@@ -1,0 +1,46 @@
+//Global mixin styles
+
+@mixin flex_center($val: "row") {
+  @if $val == "column" {
+    flex-direction: column;
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin ellipse_text() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin fixed_center() {
+  margin: "auto";
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+@mixin title_inner() {
+  font-weight: 700;
+  margin: 0 0 10px;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  z-index: 1;
+  padding: 0 0 10px;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: 2px;
+    z-index: -1;
+    background: $primary_bg;
+    width: 50px;
+  }
+}

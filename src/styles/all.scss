@@ -1,0 +1,30 @@
+//Global
+@import "./global/font.scss";
+@import "./global/mixins.scss";
+@import "./global/variable.scss";
+@import "./global/common.scss";
+@import "./global/animation.scss";
+
+//Scoped
+@import "./scoped/navbar.scss";
+@import "./scoped/banner.scss";
+@import "./scoped/skill2.scss";
+@import "./scoped/about.scss";
+@import "./scoped/project.scss";
+@import "./scoped/contact.scss";
+@import "./scoped/twoIntro.scss";
+@import "./scoped/bottomTop.scss";
+@import "./scoped/bottom.scss";
+
+
+
+
+
+/** Record the css might cause global effects
+
+1. z-index {
+    .overlay:999
+    .overlay-without-color :999
+}
+
+**/

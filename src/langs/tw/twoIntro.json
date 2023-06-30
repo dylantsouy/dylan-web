@@ -1,0 +1,23 @@
+{
+    "titleTop1": "適應多種螢幕裝置的設計",
+    "titleTop2": "直觀易用的網頁功能",
+    "subtitleTop1": "量身訂製品牌色系版面，以符合品牌的視覺風格。",
+    "subtitleTop2": "彈性的設計，使不同的網頁擁有差異化設計。",
+    "liTop1": "熟悉 UI/UX 設計，確保良好的使用者體驗。",
+    "liTop2": "響應式網頁設計（RWD），適應不同螢幕尺寸。",
+    "liTop3": "撰寫後端 API，處理網頁與伺服器之間的數據傳輸和邏輯處理。",
+    "liTop4": "串接各類型 API，與外部服務或資料來源整合和互動。",
+    "liTop5": "資料庫建置與管理，確保有效的數據存儲和查詢。",
+    "titleBottom1": "擅長手機版面設計",
+    "titleBottom2": "使用者無論何時何地都可輕鬆預覽",
+    "subtitleBottom": "完成過的公司專案包括：",
+    "liBottom1": "POS 菜單管理系統",
+    "liBottom2": "工業電腦與機台連接網頁",
+    "liBottom3": "Electron App",
+    "liBottom4": "公司內部人資系統",
+    "liBottom5": "新聞媒體頁面",
+    "liBottom6": "PWA手機版網頁",
+    "liBottom7": "後台管理系統",
+    "liBottom8": "戰情室系統",
+    "more": "其他專案..."
+}

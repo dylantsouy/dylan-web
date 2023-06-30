@@ -1,0 +1,310 @@
+.skill {
+  position: relative;
+  .main-area {
+    display: flex;
+    justify-content: space-between;
+    .skill-left {
+      width: 40%;
+      .skill-area {
+        position: relative;
+        padding-right: 20%;
+        .skill-name {
+          font-weight: 600;
+          font-size: 16px;
+        }
+        .skill-bar-outer {
+          width: 100%;
+          height: 8px;
+          margin: 15px 0 10px;
+          border-radius: $border_radius;
+          background-color: $second_bg;
+          .skill-bar-value1 {
+            position: relative;
+            height: 8px;
+            width: 0%;
+            border-radius: $border_radius;
+            background-color: $primary_bg;
+            transition: 1s;
+            &.active {
+              width: 95%;
+              &::after {
+                font-size: 14px;
+                content: "95%";
+                position: absolute;
+                right: -15px;
+                top: -25px;
+              }
+            }
+          }
+          .skill-bar-value2 {
+            position: relative;
+            height: 8px;
+            width: 0%;
+            border-radius: $border_radius;
+            background-color: $primary_bg;
+            transition: 2s;
+            &.active {
+              width: 75%;
+              &::after {
+                font-size: 14px;
+                content: "75%";
+                position: absolute;
+                right: -15px;
+                top: -25px;
+              }
+            }
+          }
+          .skill-bar-value3 {
+            position: relative;
+            height: 8px;
+            width: 0%;
+            border-radius: $border_radius;
+            background-color: $primary_bg;
+            transition: 2s;
+            &.active {
+              width: 80%;
+              &::after {
+                font-size: 14px;
+                content: "80%";
+                position: absolute;
+                right: -15px;
+                top: -25px;
+              }
+            }
+          }
+          .skill-bar-value4 {
+            position: relative;
+            height: 8px;
+            width: 0%;
+            border-radius: $border_radius;
+            background-color: $primary_bg;
+            transition: 2s;
+            &.active {
+              width: 70%;
+              &::after {
+                font-size: 14px;
+                content: "70%";
+                position: absolute;
+                right: -15px;
+                top: -25px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .skill-right {
+      width: 60%;
+      .skill-right-title {
+        font-weight: 600;
+        font-size: 18px;
+        color: $primary_text;
+      }
+      .skill-right-body {
+        padding: 10px;
+        margin: 10px 0;
+        background-color: #fff;
+        border-radius: $border_radius;
+        border: 1px solid $primary_text;
+        box-shadow: 0 0 3px $primary_text;
+      }
+      .skill-right-text {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        margin: 2px 0;
+        svg {
+          width: 8px;
+          margin-right: 5px;
+        }
+      }
+      .tools {
+        display: flex;
+        align-items: center;
+        .tools1 {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+        img {
+          width: auto;
+          height: 40px;
+          margin: 5px;
+        }
+      }
+    }
+  }
+  .down-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    .normal {
+      display: block;
+    }
+    .rwd {
+      display: none;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  .skill {
+    .main-area {
+      .skill-right {
+        img {
+          width: auto;
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .skill {
+    .main-area {
+      .skill-left {
+        width: 35%;
+        .skill-area {
+          padding-right: 5%;
+          .skill-name {
+            font-size: 14px;
+          }
+          .skill-bar-outer {
+            .skill-bar-value1 {
+              &::after {
+                font-size: 13px;
+              }
+            }
+            .skill-bar-value2 {
+              &::after {
+                font-size: 13px;
+              }
+            }
+            .skill-bar-value3 {
+              &::after {
+                font-size: 13px;
+              }
+            }
+            .skill-bar-value4 {
+              &::after {
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+      .skill-right {
+        width: 60%;
+        .skill-right-title {
+          font-size: 16px;
+        }
+        .skill-right-text {
+          font-size: 12px;
+        }
+        .tools {
+          display: flex;
+          align-items: center;
+          img {
+            width: auto;
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .skill {
+    .main-area {
+      .skill-right {
+        img {
+          width: auto;
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .skill {
+    .main-area {
+      flex-direction: column;
+      .skill-left {
+        width: 100%;
+        .skill-area {
+          padding-right: 0;
+        }
+      }
+      .skill-right {
+        width: 100%;
+        img {
+          width: auto;
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 865px) {
+  .skill {
+    .main-area {
+      .skill-right {
+        .tools {
+          justify-content: flex-start;
+        }
+        img {
+          height: 25px;
+        }
+      }
+    }
+    .down-bg {
+      .normal {
+        display: none !important;
+      }
+      .rwd {
+        display: block !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .skill {
+    .main-area {
+      .skill-right {
+        .tools {
+          .tools2 {
+            img {
+              width: 35%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .skill {
+    .main-area {
+      .skill-right {
+        .tools {
+          .tools2 {
+            justify-content: space-between;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

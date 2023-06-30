@@ -1,0 +1,15 @@
+{
+    "aboutMe": "About Me",
+    "subtitle": "A Full-Stack Developer Based In Taiwan",
+    "name": "I'm Dylan Tsou",
+    "a": "A",
+    "position": "Full-Stack Developer",
+    "basedIn": "Based In",
+    "taiwan": "Taiwan",
+    "intro": "As a web software engineer, I am passionate and dedicated to web development and related tasks. I am fascinated by web programming and have accumulated extensive work experience in this field. I am capable of independently handling UI/UX design, frontend development, as well as backend programming and database management. I am also proficient in deploying applications to the cloud. I constantly strive to acquire more skills and knowledge in this domain, and I dedicate myself to daily learning and improving my coding abilities while maintaining my passion for the field. I approach each job with a serious attitude, viewing it from the perspective of an architect, and I work hard to pave the way for my dreams.",
+    "birthday": "Birthday",
+    "age": "Age",
+    "email": "Email",
+    "phone": "Phone",
+    "downloadCV": "Download CV"
+}

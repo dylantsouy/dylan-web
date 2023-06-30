@@ -1,0 +1,103 @@
+
+        <svg version="1.1" id="animate-border" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 908.5 976.2" style="enable-background:new 0 0 908.5 976.2;" xml:space="preserve">
+          <style type="text/css">
+            .st0 {
+              fill: #FFFFFF;
+            }
+
+            .st1 {
+              opacity: 5.000000e-02;
+            }
+
+            .st2 {
+              fill: #1A4A88;
+            }
+
+            .st3 {
+              opacity: 0.8;
+              fill: #EA7225;
+            }
+
+            .st4 {
+              fill: #D86928;
+            }
+
+            .st5 {
+              fill: #EA7225;
+            }
+
+            .st6 {
+              fill: #F89938;
+            }
+
+            .st7 {
+              fill: #FDFEFE;
+            }
+
+            .st8 {
+              opacity: 0.5;
+              fill: #EA7225;
+            }
+
+            .st9 {
+              opacity: 0.75;
+              fill: #EA7225;
+            }
+
+            .st10 {
+              fill: none;
+              stroke: #1A4A88;
+              stroke-width: 1.5;
+              stroke-miterlimit: 10;
+            }
+
+            .st11 {
+              opacity: 0.1;
+            }
+
+            .st12 {
+              opacity: 0.85;
+              fill: #EA7225;
+            }
+
+            .st13 {
+              opacity: 0.81;
+              fill: #EA7225;
+            }
+
+            .st14 {
+              opacity: 0.4;
+              fill: #EA7225;
+            }
+
+            .st15 {
+              opacity: 0.7;
+              fill: #EA7225;
+            }
+
+            .st16 {
+              fill: none;
+              stroke: #F0577E;
+              stroke-width: 2;
+              stroke-miterlimit: 10;
+            }
+
+            .st17 {
+              fill: none;
+              stroke: #F0577E;
+              stroke-width: 2;
+              stroke-miterlimit: 10;
+              stroke-dasharray: 3.9904, 5.9856;
+            }
+          </style>
+          <g>
+            <g>
+              <g>
+                <path class="st16" d="M8.4,908.7c0,0,0.6,0.4,1.7,1.1" />
+                <path class="st17 path" d="M15.2,912.9c36.7,22,207.6,117.4,147.2-44.2c-67.5-180.6-137.7-410.5,320-358
+            c457.7,52.5,448.6-207.4,383-331C808.1,71.8,725.1,26.6,704.9,16.8" />
+                <path class="st16" d="M702.2,15.5c-1.2-0.5-1.8-0.8-1.8-0.8" />
+              </g>
+            </g>
+          </g>
+        </svg>

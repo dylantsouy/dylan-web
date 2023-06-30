@@ -1,0 +1,27 @@
+{
+    "contact": "Contact",
+    "subtitle": "Feel free to contact me if you need more information.",
+    "address": "My Address",
+    "addressValue": "No. 134, Xianbei Street, North District, Tainan City 704, Taiwan",
+    "phone": "My Phone",
+    "phoneValue1": "Mobile: +886 986 162 360",
+    "email": "My Email",
+    "input": {
+        "title": "Write to Me",
+        "name": "Your Name",
+        "noName": "Name cannot be empty. Please enter your name.",
+        "phone": "Your Phone",
+        "email": "Your Email",
+        "emailErrorFormat": "Invalid email address format.",
+        "noEmail": "Email address cannot be empty. Please enter your email.",
+        "content": "Your Message",
+        "noContent": "Message cannot be empty. Please enter your message.",
+        "placeholder": "Please enter...",
+        "required": "Required",
+        "sendMail": "Send Email",
+        "conformSend": "Confirm sending the email?",
+        "success": "Email sent successfully. Thank you!",
+        "error": "Failed to send email. Please contact me by phone. Thank you!",
+        "tooManyTry": "Too close to the previous sending time. Please try again later. Thank you!"
+    }
+}
