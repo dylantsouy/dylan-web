@@ -3,7 +3,7 @@ import { useTranslation } from "langs/useTranslation";
 import project1 from "assets/images/DylanEnglish.gif";
 import project2 from "assets/images/gif.gif";
 import project3 from "assets/images/movie.gif";
-import project4 from "assets/images/draw.gif";
+import project4 from "assets/images/draw.png";
 import project5 from "assets/images/hydration.gif";
 import project6 from "assets/images/luckydraw.gif";
 import { Swiper, SwiperSlide } from "swiper/react/swiper-react.js";
@@ -112,12 +112,8 @@ const Project = () => {
                                         }}
                                     />
                                     <div className='project-info'>
-                                        <div className='project-text'>
-                                            {e.text}
-                                        </div>
-                                        <div className='project-date'>
-                                            {e.date}
-                                        </div>
+                                        <div className='project-text'>{e.text}</div>
+                                        <div className='project-date'>{e.date}</div>
                                     </div>
                                 </div>
                                 <div className='rwd-text'>{e.text}</div>
