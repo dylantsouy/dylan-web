@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/dylan-web/static/css/main.728f4efa.chunk.css",
-    "main.js": "/dylan-web/static/js/main.3b377e95.chunk.js",
-    "main.js.map": "/dylan-web/static/js/main.3b377e95.chunk.js.map",
-    "runtime-main.js": "/dylan-web/static/js/runtime-main.0d68b7c3.js",
-    "runtime-main.js.map": "/dylan-web/static/js/runtime-main.0d68b7c3.js.map",
-    "static/css/2.32026e26.chunk.css": "/dylan-web/static/css/2.32026e26.chunk.css",
-    "static/js/2.f8488278.chunk.js": "/dylan-web/static/js/2.f8488278.chunk.js",
-    "static/js/2.f8488278.chunk.js.map": "/dylan-web/static/js/2.f8488278.chunk.js.map",
+    "main.css": "/dylan-web/static/css/main.4b78c47f.chunk.css",
+    "main.js": "/dylan-web/static/js/main.29d29c8c.chunk.js",
+    "main.js.map": "/dylan-web/static/js/main.29d29c8c.chunk.js.map",
+    "runtime-main.js": "/dylan-web/static/js/runtime-main.ff767e58.js",
+    "runtime-main.js.map": "/dylan-web/static/js/runtime-main.ff767e58.js.map",
+    "static/css/2.6d4e27b4.chunk.css": "/dylan-web/static/css/2.6d4e27b4.chunk.css",
+    "static/js/2.d93129c5.chunk.js": "/dylan-web/static/js/2.d93129c5.chunk.js",
+    "static/js/2.d93129c5.chunk.js.map": "/dylan-web/static/js/2.d93129c5.chunk.js.map",
     "index.html": "/dylan-web/index.html",
-    "static/css/2.32026e26.chunk.css.map": "/dylan-web/static/css/2.32026e26.chunk.css.map",
-    "static/css/main.728f4efa.chunk.css.map": "/dylan-web/static/css/main.728f4efa.chunk.css.map",
-    "static/js/2.f8488278.chunk.js.LICENSE.txt": "/dylan-web/static/js/2.f8488278.chunk.js.LICENSE.txt",
+    "static/css/2.6d4e27b4.chunk.css.map": "/dylan-web/static/css/2.6d4e27b4.chunk.css.map",
+    "static/css/main.4b78c47f.chunk.css.map": "/dylan-web/static/css/main.4b78c47f.chunk.css.map",
+    "static/js/2.d93129c5.chunk.js.LICENSE.txt": "/dylan-web/static/js/2.d93129c5.chunk.js.LICENSE.txt",
     "static/media/DylanEnglish.d9b467f1.gif": "/dylan-web/static/media/DylanEnglish.d9b467f1.gif",
     "static/media/FuYen, Tsou - CV (2023).3f22f7f0.pdf": "/dylan-web/static/media/FuYen, Tsou - CV (2023).3f22f7f0.pdf",
     "static/media/aboutPic.f4ac3e6d.png": "/dylan-web/static/media/aboutPic.f4ac3e6d.png",
@@ -20,7 +20,7 @@
     "static/media/banner-shape.bb9ef0cd.png": "/dylan-web/static/media/banner-shape.bb9ef0cd.png",
     "static/media/dashLine.63cdf8b5.svg": "/dylan-web/static/media/dashLine.63cdf8b5.svg",
     "static/media/down-bg.d8aa4d75.png": "/dylan-web/static/media/down-bg.d8aa4d75.png",
-    "static/media/draw.73c0244a.gif": "/dylan-web/static/media/draw.73c0244a.gif",
+    "static/media/draw.62dd3ffe.png": "/dylan-web/static/media/draw.62dd3ffe.png",
     "static/media/electronjs.018baa9c.svg": "/dylan-web/static/media/electronjs.018baa9c.svg",
     "static/media/figma.3a82106b.png": "/dylan-web/static/media/figma.3a82106b.png",
     "static/media/gif.5d0985bf.gif": "/dylan-web/static/media/gif.5d0985bf.gif",
@@ -51,10 +51,10 @@
     "static/media/vite.96269780.svg": "/dylan-web/static/media/vite.96269780.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0d68b7c3.js",
-    "static/css/2.32026e26.chunk.css",
-    "static/js/2.f8488278.chunk.js",
-    "static/css/main.728f4efa.chunk.css",
-    "static/js/main.3b377e95.chunk.js"
+    "static/js/runtime-main.ff767e58.js",
+    "static/css/2.6d4e27b4.chunk.css",
+    "static/js/2.d93129c5.chunk.js",
+    "static/css/main.4b78c47f.chunk.css",
+    "static/js/main.29d29c8c.chunk.js"
   ]
 }
