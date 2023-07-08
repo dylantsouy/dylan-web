@@ -23,7 +23,7 @@
     "react-dom": "^18.2.0",
     "react-lazy-load-image-component": "^1.6.0",
     "react-localforage": "^1.0.1",
-    "react-router-dom": "^6.3.0",
+    "react-router-dom": "^5.3.4",
     "react-scripts": "4.0.3",
     "react-typing-effect": "^2.0.5",
     "sass": "^1.51.0",
