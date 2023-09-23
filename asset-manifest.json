@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/dylan-web/static/css/main.4b78c47f.chunk.css",
-    "main.js": "/dylan-web/static/js/main.29d29c8c.chunk.js",
-    "main.js.map": "/dylan-web/static/js/main.29d29c8c.chunk.js.map",
+    "main.js": "/dylan-web/static/js/main.ea66badf.chunk.js",
+    "main.js.map": "/dylan-web/static/js/main.ea66badf.chunk.js.map",
     "runtime-main.js": "/dylan-web/static/js/runtime-main.ff767e58.js",
     "runtime-main.js.map": "/dylan-web/static/js/runtime-main.ff767e58.js.map",
     "static/css/2.6d4e27b4.chunk.css": "/dylan-web/static/css/2.6d4e27b4.chunk.css",
-    "static/js/2.d93129c5.chunk.js": "/dylan-web/static/js/2.d93129c5.chunk.js",
-    "static/js/2.d93129c5.chunk.js.map": "/dylan-web/static/js/2.d93129c5.chunk.js.map",
+    "static/js/2.4e2fd7af.chunk.js": "/dylan-web/static/js/2.4e2fd7af.chunk.js",
+    "static/js/2.4e2fd7af.chunk.js.map": "/dylan-web/static/js/2.4e2fd7af.chunk.js.map",
     "index.html": "/dylan-web/index.html",
     "static/css/2.6d4e27b4.chunk.css.map": "/dylan-web/static/css/2.6d4e27b4.chunk.css.map",
     "static/css/main.4b78c47f.chunk.css.map": "/dylan-web/static/css/main.4b78c47f.chunk.css.map",
-    "static/js/2.d93129c5.chunk.js.LICENSE.txt": "/dylan-web/static/js/2.d93129c5.chunk.js.LICENSE.txt",
+    "static/js/2.4e2fd7af.chunk.js.LICENSE.txt": "/dylan-web/static/js/2.4e2fd7af.chunk.js.LICENSE.txt",
     "static/media/DylanEnglish.d9b467f1.gif": "/dylan-web/static/media/DylanEnglish.d9b467f1.gif",
-    "static/media/FuYen, Tsou - CV (2023).3f22f7f0.pdf": "/dylan-web/static/media/FuYen, Tsou - CV (2023).3f22f7f0.pdf",
+    "static/media/FuYen, Tsou - CV (2023).1bd59a9c.pdf": "/dylan-web/static/media/FuYen, Tsou - CV (2023).1bd59a9c.pdf",
     "static/media/aboutPic.f4ac3e6d.png": "/dylan-web/static/media/aboutPic.f4ac3e6d.png",
     "static/media/flag-icons.min.css": "/dylan-web/static/media/zw.cd37458b.svg",
     "static/media/aws-s3.010fd24b.svg": "/dylan-web/static/media/aws-s3.010fd24b.svg",
@@ -35,11 +35,6 @@
     "static/media/logo.d72887e1.png": "/dylan-web/static/media/logo.d72887e1.png",
     "static/media/luckydraw.0159c5b5.gif": "/dylan-web/static/media/luckydraw.0159c5b5.gif",
     "static/media/mainBall.7db8a819.svg": "/dylan-web/static/media/mainBall.7db8a819.svg",
-    "static/media/map_lg.40661741.png": "/dylan-web/static/media/map_lg.40661741.png",
-    "static/media/map_md.faded13e.png": "/dylan-web/static/media/map_md.faded13e.png",
-    "static/media/map_sm.26ae017c.png": "/dylan-web/static/media/map_sm.26ae017c.png",
-    "static/media/map_xl.5e54b07b.png": "/dylan-web/static/media/map_xl.5e54b07b.png",
-    "static/media/map_xs.17f337a3.png": "/dylan-web/static/media/map_xs.17f337a3.png",
     "static/media/material.3129300c.svg": "/dylan-web/static/media/material.3129300c.svg",
     "static/media/mongodb.028a9cac.png": "/dylan-web/static/media/mongodb.028a9cac.png",
     "static/media/movie.e8762575.gif": "/dylan-web/static/media/movie.e8762575.gif",
@@ -53,8 +48,8 @@
   "entrypoints": [
     "static/js/runtime-main.ff767e58.js",
     "static/css/2.6d4e27b4.chunk.css",
-    "static/js/2.d93129c5.chunk.js",
+    "static/js/2.4e2fd7af.chunk.js",
     "static/css/main.4b78c47f.chunk.css",
-    "static/js/main.29d29c8c.chunk.js"
+    "static/js/main.ea66badf.chunk.js"
   ]
 }
