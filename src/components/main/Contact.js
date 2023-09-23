@@ -1,7 +1,6 @@
 import React, { useState, useReducer } from "react";
 import { useTranslation } from "langs/useTranslation";
 import * as localforage from "localforage";
-import { mapMaps } from "helpers/mapSize";
 import FormControl from "@mui/material/FormControl";
 import FormHelperText from "@mui/material/FormHelperText";
 import TextField from "@mui/material/TextField";
@@ -14,19 +13,15 @@ import { emailValidator } from "helpers/validator";
 import emailjs from "emailjs-com";
 import dayjs from "dayjs";
 import Noty from "../common/Noty";
+import Link from "@mui/material/Link";
 import Loading from "../common/Loading";
 import { ContactReducer } from "reducers/ContactReducer";
-import mapXs from "assets/images/map_xs.png";
 let utc = require("dayjs/plugin/utc");
 dayjs.extend(utc);
 
 const Contact = () => {
     const { t } = useTranslation("contact");
-    const {
-        REACT_APP_CONTACT_USER_ID,
-        REACT_APP_CONTACT_SERVICE_ID,
-        REACT_APP_CONTACT_TEMPLATE_ID,
-    } = process.env;
+    const { REACT_APP_CONTACT_USER_ID, REACT_APP_CONTACT_SERVICE_ID, REACT_APP_CONTACT_TEMPLATE_ID } = process.env;
     emailjs.init(REACT_APP_CONTACT_USER_ID);
     const service_id = REACT_APP_CONTACT_SERVICE_ID;
     const template_id = REACT_APP_CONTACT_TEMPLATE_ID;
@@ -54,14 +49,7 @@ const Contact = () => {
     const submit = async () => {
         const { name, email, phone, content } = contactVariables;
         const lastSubmitTime = await localforage.getItem("lastSubmitTime");
-        if (
-            lastSubmitTime &&
-            dayjs(currentDateInUTC()).diff(
-                dayjs(lastSubmitTime),
-                "seconds",
-                false
-            ) < 60
-        ) {
+        if (lastSubmitTime && dayjs(currentDateInUTC()).diff(dayjs(lastSubmitTime), "seconds", false) < 60) {
             setNoty((prev) => {
                 prev.text = t("input.tooManyTry");
                 prev.type = "error";
@@ -101,10 +89,7 @@ const Contact = () => {
                         return prev;
                     });
                     setNotyOpen(true);
-                    await localforage.setItem(
-                        "lastSubmitTime",
-                        currentDateInUTC()
-                    );
+                    await localforage.setItem("lastSubmitTime", currentDateInUTC());
                 },
                 () => {
                     setNoty((prev) => {
@@ -131,21 +116,6 @@ const Contact = () => {
             </div>
             <div className='subtitle'>{t("subtitle")}</div>
             <div className='main-area'>
-                <div className='map'>
-                    <picture>
-                        {mapMaps.map((e) => (
-                            <source
-                                key={e.name}
-                                media={`(min-width: ${e.size}px)`}
-                                srcSet={e.map}
-                            />
-                        ))}
-                        <img
-                            src={mapXs}
-                            alt='map-xs'
-                        />
-                    </picture>
-                </div>
                 <div className='contact-bottom'>
                     <div className='contact-content'>
                         <div className='contact-title'>{t("contact")}</div>
@@ -153,8 +123,16 @@ const Contact = () => {
                             <div className='icon'>
                                 <RoomIcon />
                             </div>
-                            <div className='name'>{t("address")}</div>
-                            <div className='value'>{t("addressValue")}</div>
+                            <div className='name'>{t("blog")}</div>
+                            <div className='value'>
+                                <Link
+                                    href='https://medium.com/me/stories/public'
+                                    underline='none'
+                                    target='_blank'
+                                >
+                                    https://medium.com/me/stories/public
+                                </Link>
+                            </div>
                         </div>
                         <div className='phone-email'>
                             <div className='phone'>
@@ -183,10 +161,7 @@ const Contact = () => {
                             <div className='name-phone'>
                                 <div className='name'>
                                     <FormControl
-                                        error={
-                                            contactVariables.check &&
-                                            !contactVariables.name
-                                        }
+                                        error={contactVariables.check && !contactVariables.name}
                                         variant='standard'
                                     >
                                         <TextField
@@ -203,12 +178,7 @@ const Contact = () => {
                                                 })
                                             }
                                         />
-                                        {contactVariables.check &&
-                                            !contactVariables.name && (
-                                                <FormHelperText id='component-error-text'>
-                                                    {t("input.noName")}
-                                                </FormHelperText>
-                                            )}
+                                        {contactVariables.check && !contactVariables.name && <FormHelperText id='component-error-text'>{t("input.noName")}</FormHelperText>}
                                     </FormControl>
                                 </div>
                                 <div className='phone'>
@@ -232,11 +202,7 @@ const Contact = () => {
                             </div>
                             <div className='email'>
                                 <FormControl
-                                    error={
-                                        (contactVariables.check &&
-                                            !contactVariables.email) ||
-                                        contactVariables.emailFormatError
-                                    }
+                                    error={(contactVariables.check && !contactVariables.email) || contactVariables.emailFormatError}
                                     variant='standard'
                                 >
                                     <TextField
@@ -244,29 +210,15 @@ const Contact = () => {
                                         label={t("input.email")}
                                         placeholder={t("input.placeholder")}
                                         value={contactVariables.email}
-                                        onChange={(e) =>
-                                            emailHandler(e.target.value)
-                                        }
+                                        onChange={(e) => emailHandler(e.target.value)}
                                     />
-                                    {contactVariables.check &&
-                                        !contactVariables.email && (
-                                            <FormHelperText id='component-error-text'>
-                                                {t("input.noEmail")}
-                                            </FormHelperText>
-                                        )}
-                                    {contactVariables.emailFormatError && (
-                                        <FormHelperText id='component-error-text'>
-                                            {t("input.emailErrorFormat")}
-                                        </FormHelperText>
-                                    )}
+                                    {contactVariables.check && !contactVariables.email && <FormHelperText id='component-error-text'>{t("input.noEmail")}</FormHelperText>}
+                                    {contactVariables.emailFormatError && <FormHelperText id='component-error-text'>{t("input.emailErrorFormat")}</FormHelperText>}
                                 </FormControl>
                             </div>
                             <div className='content'>
                                 <FormControl
-                                    error={
-                                        contactVariables.check &&
-                                        !contactVariables.content
-                                    }
+                                    error={contactVariables.check && !contactVariables.content}
                                     variant='standard'
                                 >
                                     <TextareaAutosize
@@ -283,25 +235,14 @@ const Contact = () => {
                                             })
                                         }
                                     />
-                                    {contactVariables.check &&
-                                        !contactVariables.content && (
-                                            <FormHelperText id='component-error-text'>
-                                                {t("input.noContent")}
-                                            </FormHelperText>
-                                        )}
+                                    {contactVariables.check && !contactVariables.content && <FormHelperText id='component-error-text'>{t("input.noContent")}</FormHelperText>}
                                 </FormControl>
                             </div>
                             <div className='btn'>
                                 <ClickBtn
                                     disabled={contactVariables.btnDisabled}
                                     type='primaryBtn'
-                                    text={
-                                        contactVariables.btnDisabled ? (
-                                            <Loading color='white' />
-                                        ) : (
-                                            t("input.sendMail")
-                                        )
-                                    }
+                                    text={contactVariables.btnDisabled ? <Loading color='white' /> : t("input.sendMail")}
                                     onClick={submit}
                                 />
                             </div>

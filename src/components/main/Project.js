@@ -36,7 +36,7 @@ const Project = () => {
             src: project6,
             text: t("project6"),
             date: "Oct, 2022",
-            link: "https://dylantsouy.github.io/luckydraw-frontend/#/login",
+            link: "https://dylantsouy.github.io/luckydraw-dashboard/#/login",
             new: false,
         },
         {
